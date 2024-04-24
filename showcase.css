@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.video-container {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-video {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-color: #19181B;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+
+.content-container {
+  text-align: center;
+}
+
+.title {
+  font: verdana;
+  font-size: 20px;
+  color: #19181B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 75px;
+  /** animation **/
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.title h1 {
+  margin-bottom: 5px;
+}
+
+.title h4 {
+  margin-top: 0;
+}
+
+.credit {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+.credit p {
+  margin-bottom: 20px;
+}
+
+.credit img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.project-info-container {
+  font: verdana;
+  font-size: 20px;
+  color: #19181B;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.project-info-text {
+  max-width: 800px; /* Limit the width of the text */
+  font-size: 25px;
+  margin-bottom: 20px; /* Add margin at the bottom */
+  margin: 0 auto 20px; /* Center align horizontally with auto margin and add bottom margin */
+  text-align: justify; /* Justify text */
+}
+
+.project-info-img-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Add gap between images */
+}
+
+.project-info-animatic {
+  max-width: 800px;
+  height:auto;
+}
+
+.project-info-img {
+  max-width: 35%; /* Adjust width of images */
+  height: auto;
+}
