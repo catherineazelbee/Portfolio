@@ -1,0 +1,90 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.animation-video {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-color: #19181B;
+  object-fit: cover;
+  filter: brightness(100%);
+  /** animation **/
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.middle-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.middle-button-text {
+  background-color: #dcd7f8;
+  color: #19181B;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.video-container:hover .animation-video,
+.video-container:hover .middle-button~.animation-video {
+  filter: brightness(50%);
+}
+
+.video-container:hover .middle-button {
+  opacity: 1;
+}
+
+.text {
+  font: verdana;
+  font-size: 20px;
+  color: #19181B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /** animation **/
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.text h1 {
+  margin-bottom: 0;
+}
+
+.text h4 {
+  margin-top: 0;
+}

@@ -1,0 +1,46 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.project {
+    font: verdana;
+    font-size: 20px;
+    color: #19181B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /** animation **/
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.project h1,
+.project h3,
+.project p {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    margin-bottom: 10px;
+}
+
+.code-img {
+    max-width: 100%;
+    height: auto;
+}

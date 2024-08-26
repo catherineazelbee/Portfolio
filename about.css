@@ -1,0 +1,135 @@
+/* basic page setup */
+html, body {
+    padding: 0;
+    margin: 0;
+    padding-right: 0;
+    background-color: #F7F4FF;
+}
+
+/* banner image - on all pages */
+.banner-img {
+    width:100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* about me text */
+.about-me-container {
+    font: verdana;
+    font-size: 30px;
+    color: #19181B;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    grid-gap: 30px;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    /** animation **/
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-headshot{
+  margin-top: 60px;
+  margin-left:70px;
+  width: 80%;
+  height: auto;
+  /** animation **/
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* contact buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    background-color:transparent;
+    color: #19181B;
+    border: 2px solid #19181B;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #dcd7f8;
+    color: #19181B;
+}
+
+.contact-form {
+  width: 500px;
+}
+
+/* tabs */
+.tabs {
+  background-color: #dcd7f8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.tabs ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  margin: 0 10px;
+}
+
+.tabs a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #19181B;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box; 
+  transition: all 0.3s ease; 
+}
+
+.tabs a.active {
+  background-color: #b8b1e36f;
+  color: #19181B;
+}
+
+.tabs a:hover {
+  background-color: #b8b1e36f;
+  font-size: 22px; 
+  color: #19181B;
+}
+
+

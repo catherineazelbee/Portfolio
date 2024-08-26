@@ -1,0 +1,196 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.video-container {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-video {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-color: #19181B;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+
+.content-container {
+  text-align: center;
+}
+
+.title {
+  font: verdana;
+  font-size: 20px;
+  color: #19181B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 75px;
+  /** animation **/
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.small-title {
+  font: verdana;
+  font-size: 20px;
+  color: #19181B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title h1 {
+  margin-bottom: 5px;
+}
+
+.title h4 {
+  margin-top: 0;
+}
+
+.credit {
+  font-size: 18px;
+  color: #333;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.credit p {
+  margin-bottom: 20px;
+}
+
+.credit img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.project-info-container {
+  font: verdana;
+  font-size: 20px;
+  color: #19181B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-info-text {
+  max-width: 800px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin: 0 auto 20px;
+  text-align: justify;
+}
+
+.project-info-img-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.project-info-animatic {
+  max-width: 800px;
+  height: auto;
+}
+
+.project-info-img {
+  max-width: 35%;
+  height: auto;
+}
+
+.project-info-img-large {
+  max-width: 50%;
+  height: auto;
+}
+
+.project-info-img-large2 {
+  max-width: 200px;
+  height: auto;
+}
+
+/** IMAGE WITH TEXT APPEARING ABOVE **/
+.project-info-img-small {
+  max-height: 300px;
+  width: auto;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  position: relative; 
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.project-info-img-small:hover {
+  transform: scale(1.07);
+  filter: brightness(70%);
+  z-index: 1;
+}
+
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-container:hover .image-title {
+  opacity: 1;
+  z-index: 1;
+}
+
+.project-info-img-small2 {
+  max-width: 400px;
+  height: auto;
+}
+
+.project-info-quote-container {
+  max-width: 800px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.project-info-reference-link {
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.project-info-reference-link a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-info-reference-link a:hover {
+  color: #7f7aa16f;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: #7f7aa16f;
+}
