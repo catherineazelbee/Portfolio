@@ -10,12 +10,23 @@
 }
 
 .video-container {
-  position: relative;
+  width: 1200px;
+  height: auto;
+  margin: 0 auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container iframe {
   width: 100%;
-  max-width: 1200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
 }
 
 .animation-video {
