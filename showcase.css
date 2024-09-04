@@ -177,7 +177,7 @@
 }
 
 .project-info-reference-link {
-  font-size: 25px;
+  font-size: 30px;
   font-style: italic;
   text-decoration: none;
 }
@@ -190,7 +190,7 @@
 
 .project-info-reference-link a:hover {
   color: #7f7aa16f;
-  font-size: 30px;
+  font-size: 35px;
   text-decoration: underline;
   text-decoration-color: #7f7aa16f;
 }
