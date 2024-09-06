@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 1px;
+    margin-bottom: 30px;
 }
 
 .project {
     font: verdana;
-    font-size: 20px;
+    font-size: 17px;
     color: #19181B;
     display: flex;
     flex-direction: column;
@@ -46,6 +46,6 @@
 }
 
 .schedule-mp4 {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
