@@ -40,7 +40,12 @@
     margin-bottom: 10px;
 }
 
-.code-img {
-    max-width: 100%;
+.bridget-mp4 {
+    width: 50%;
+    height: auto;
+}
+
+.schedule-mp4 {
+    width: 50%;
     height: auto;
 }
