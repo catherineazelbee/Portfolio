@@ -207,9 +207,5 @@ body {
     font-size: 14px;
     padding: 10px;
   }
-
-  .tabs ul {
-    justify-content: flex-start;
-    /* Align to the left for easier scrolling */
-  }
+  
 }
