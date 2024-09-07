@@ -8,6 +8,7 @@
 
 .video-container {
   max-width: 1200px;
+  width: 100%; /* Ensure full width on smaller screens */
   margin: 0 auto 20px;
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@
   height: auto;
   opacity: 1;
   display: block;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
   background-color: #19181B;
   object-fit: cover;
@@ -39,7 +40,6 @@
   align-items: center;
   text-align: center;
   margin-top: 75px;
-  /** animation **/
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
@@ -65,8 +65,7 @@
 .credit {
   font-size: 18px;
   color: #333;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin: 0 250px; /* Add auto margins to center on large screens */
 }
 
 .credit p {
@@ -92,9 +91,7 @@
 .project-info-text {
   max-width: 800px;
   font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin: 0 auto 20px;
+  margin: 20px auto;
   text-align: justify;
 }
 
@@ -103,34 +100,20 @@
   justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
+  flex-wrap: wrap; /* For better layout on smaller screens */
 }
 
-.project-info-animatic {
+.project-info-animatic, .project-info-img, .project-info-img-large, .project-info-img-large2 {
+  width: 100%; /* Ensure full width for small screens */
   max-width: 800px;
   height: auto;
 }
 
-.project-info-img {
-  max-width: 35%;
-  height: auto;
-}
-
-.project-info-img-large {
-  max-width: 50%;
-  height: auto;
-}
-
-.project-info-img-large2 {
-  max-width: 200px;
-  height: auto;
-}
-
-/** IMAGE WITH TEXT APPEARING ABOVE **/
 .project-info-img-small {
   max-height: 300px;
   width: auto;
   transition: transform 0.5s ease, filter 0.5s ease;
-  position: relative; 
+  position: relative;
 }
 
 .image-container {
@@ -160,18 +143,10 @@
   z-index: 1;
 }
 
-.project-info-img-small2 {
-  max-width: 400px;
-  height: auto;
-}
-
 .project-info-quote-container {
   max-width: 800px;
   font-size: 25px;
-  margin-bottom: 20px;
-  margin: 0 auto 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 20px 50px;
   text-align: justify;
   font-style: italic;
 }
@@ -193,4 +168,72 @@
   font-size: 35px;
   text-decoration: underline;
   text-decoration-color: #7f7aa16f;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1200px) {
+  .credit {
+    margin: 0 100px; /* Reduce margins for medium screens */
+  }
+  
+  .project-info-text {
+    font-size: 18px;
+  }
+
+  .project-info-quote-container {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .credit {
+    margin: 0 50px; /* Further reduce margins for small screens */
+  }
+
+  .project-info-text {
+    font-size: 16px;
+  }
+
+  .project-info-quote-container {
+    font-size: 20px;
+  }
+
+  .project-info-img-small {
+    max-height: 200px;
+  }
+
+  .project-info-reference-link a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title, .small-title {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .credit {
+    margin: 0 20px;
+  }
+
+  .project-info-text {
+    font-size: 14px;
+  }
+
+  .project-info-quote-container {
+    font-size: 18px;
+  }
+
+  .project-info-img-container {
+    gap: 5px; /* Narrow gaps on smaller screens */
+  }
+
+  .project-info-reference-link a {
+    font-size: 22px;
+  }
 }

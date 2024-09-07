@@ -24,7 +24,6 @@
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -49,3 +48,53 @@
     width: 60%;
     height: auto;
 }
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 1200px) {
+    .project {
+        font-size: 16px;
+        margin-left: 20px;  /* Reduce margin for wider screens */
+        margin-right: 20px;
+    }
+    
+    .bridget-mp4, .schedule-mp4 {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        font-size: 15px;
+        width: 90%; /* Take up more horizontal space */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .bridget-mp4, .schedule-mp4 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        font-size: 14px;
+        width: 95%; /* Almost full width on mobile */
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .project h1,
+    .project h3,
+    .project p {
+        margin-bottom: 8px;
+    }
+    
+    .bridget-mp4, .schedule-mp4 {
+        width: 100%; /* Full width on mobile */
+    }
+    
+    .button-container {
+        margin-bottom: 8px;
+    }
+}
+

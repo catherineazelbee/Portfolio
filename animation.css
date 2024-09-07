@@ -103,7 +103,8 @@
 /* Responsive Design for Mobile */
 @media (max-width: 1200px) {
   .video-container {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 
