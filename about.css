@@ -172,6 +172,19 @@ body {
   .contact-form {
     width: 100%;
   }
+
+  .banner-img {
+    margin-bottom: 0; /* Ensure no gap between the image and tabs */
+  }
+
+  .tabs {
+    margin-top: 0;
+    top: 0; /* Ensure it stays aligned with the top */
+  }
+
+  .tabs a {
+    padding: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -197,5 +210,15 @@ body {
   .tabs ul {
     justify-content: flex-start;
     /* Align to the left for easier scrolling */
+  }
+
+  /* Ensuring the tabs remain attached to the banner image */
+  .banner-img {
+    margin-bottom: 0; /* Removes any extra white space under the image */
+  }
+
+  .tabs {
+    margin-top: -5px; /* Closer to the image to remove space */
+    position: relative; /* Ensures it stays connected to the banner */
   }
 }
