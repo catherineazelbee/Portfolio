@@ -23,7 +23,7 @@ body {
   color: #19181B;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
+  align-items: center;
   grid-gap: 30px;
   margin: 50px 100px 100px 250px;
   /** animation **/
@@ -95,9 +95,6 @@ body {
   width: 100%;
   z-index: 100;
   overflow-x: auto;
-  /* Allow horizontal scrolling */
-  white-space: nowrap;
-  /* Prevents wrapping of items */
 }
 
 .tabs ul {
@@ -179,8 +176,7 @@ body {
   }
 
   .tabs ul {
-    justify-content: flex-start;
-    /* Align tabs to the left for scrolling */
+    justify-content: center;
   }
 
   .tabs li {
@@ -194,18 +190,27 @@ body {
     font-size: 20px;
   }
 
-  .about-me-headshot {
-    margin-top: 30px;
+  .tabs {
+    overflow-x: hidden;
   }
 
-  .contact-button {
-    font-size: 18px;
-    padding: 10px 25px;
+  .tabs ul {
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .tabs li {
+    flex: 1;
+    text-align: center;
   }
 
   .tabs a {
     font-size: 14px;
     padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
-  
 }
