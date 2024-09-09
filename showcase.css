@@ -1,3 +1,11 @@
+/* General styling adjustments */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container setup */
 .container {
   display: flex;
   flex-direction: column;
@@ -6,29 +14,33 @@
   margin-top: 10px;
 }
 
+/* Video container */
 .video-container {
   max-width: 1200px;
-  width: 100%; /* Ensure full width on smaller screens */
+  width: 100%;
   margin: 0 auto 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10px; /* Add padding to reduce white space */
 }
 
+/* Animation video */
 .animation-video {
   width: 100%;
   height: auto;
   opacity: 1;
   display: block;
   transition: 0.5s ease;
-  backface-visibility: hidden;
   background-color: #19181B;
   object-fit: cover;
-  filter: brightness(100%);
 }
 
+/* Content container */
 .content-container {
   text-align: center;
+  width: 100%;
+  padding: 0 10px; /* Add padding for centering */
 }
 
 .title {
@@ -39,7 +51,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 30px;
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
@@ -65,7 +77,8 @@
 .credit {
   font-size: 18px;
   color: #333;
-  margin: 0 250px; /* Add auto margins to center on large screens */
+  margin: 0 auto; /* Centered credit section */
+  padding: 0 20px; /* Ensure no overflow on smaller screens */
 }
 
 .credit p {
@@ -73,11 +86,12 @@
 }
 
 .credit img {
-  max-width: 50%;
+  max-width: 100%; /* Make images responsive */
   height: auto;
   margin-top: 10px;
 }
 
+/* Project info container */
 .project-info-container {
   font: verdana;
   font-size: 20px;
@@ -93,6 +107,7 @@
   font-size: 20px;
   margin: 20px auto;
   text-align: justify;
+  padding: 0 10px; /* Ensure text fits */
 }
 
 .project-info-img-container {
@@ -100,82 +115,21 @@
   justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
-  flex-wrap: wrap; /* For better layout on smaller screens */
+  flex-wrap: wrap; /* Wrap images on smaller screens */
 }
 
-.project-info-animatic, .project-info-img, .project-info-img-large, .project-info-img-large2 {
-  width: 100%; /* Ensure full width for small screens */
+.project-info-img-large, .project-info-img-small {
+  width: 100%; /* Ensure full width on smaller screens */
   max-width: 800px;
   height: auto;
 }
 
-.project-info-img-small {
-  max-height: 300px;
-  width: auto;
-  transition: transform 0.5s ease, filter 0.5s ease;
-  position: relative;
-}
-
-.image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.project-info-img-small:hover {
-  transform: scale(1.07);
-  filter: brightness(70%);
-  z-index: 1;
-}
-
-.image-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 25px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.image-container:hover .image-title {
-  opacity: 1;
-  z-index: 1;
-}
-
-.project-info-quote-container {
-  max-width: 800px;
-  font-size: 25px;
-  margin: 20px 50px;
-  text-align: justify;
-  font-style: italic;
-}
-
-.project-info-reference-link {
-  font-size: 30px;
-  font-style: italic;
-  text-decoration: none;
-}
-
-.project-info-reference-link a {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.project-info-reference-link a:hover {
-  color: #7f7aa16f;
-  font-size: 35px;
-  text-decoration: underline;
-  text-decoration-color: #7f7aa16f;
-}
-
 /* Mobile responsiveness */
 @media (max-width: 1200px) {
-  .credit {
-    margin: 0 100px; /* Reduce margins for medium screens */
+  .video-container {
+    padding: 0 20px;
   }
-  
+
   .project-info-text {
     font-size: 18px;
   }
@@ -191,49 +145,96 @@
   }
 
   .credit {
-    margin: 0 50px; /* Further reduce margins for small screens */
-  }
-
-  .project-info-text {
-    font-size: 16px;
-  }
-
-  .project-info-quote-container {
-    font-size: 20px;
-  }
-
-  .project-info-img-small {
-    max-height: 200px;
-  }
-
-  .project-info-reference-link a {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title, .small-title {
-    font-size: 16px;
-    margin-top: 50px;
-  }
-
-  .credit {
     margin: 0 20px;
   }
 
   .project-info-text {
-    font-size: 14px;
-  }
-
-  .project-info-quote-container {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .project-info-img-container {
-    gap: 5px; /* Narrow gaps on smaller screens */
+    gap: 5px; 
   }
 
-  .project-info-reference-link a {
-    font-size: 22px;
+  .project-info-img-large {
+    max-width: 100%;
   }
 }
+
+/* Mobile responsiveness - 480px and below */
+@media (max-width: 480px) {
+  /* Prevent overflow on the body */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Ensure project-info-text stays within bounds */
+  .project-info-text {
+    font-size: 14px;
+    margin: 0 10px; /* Add small margins on the sides */
+    text-align: justify;
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word; /* Ensure long words break */
+    max-width: 100%; /* Prevent content from exceeding 100% width */
+    box-sizing: border-box; /* Include padding in element's width */
+  }
+
+  /* Ensure all parent containers fit within the viewport */
+  .container, .video-container, .content-container {
+    width: 100%;
+    padding: 0 10px; /* Add padding for small screens */
+    box-sizing: border-box; /* Include padding in total width */
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  /* Ensure there is no extra width on images */
+  .project-info-img-container, .project-info-quote-container {
+    margin: 0 10px; /* Make sure the margins fit the screen */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Prevent any elements from adding extra space */
+  .title, .small-title {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  /* Remove any margins or padding that might cause issues */
+  .credit {
+    margin: 0 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-info-animatic {
+    width: 100%;
+    max-width: 100%; /* Ensure it stays within the screen */
+    height: auto;
+    margin: 0 10px; /* Add margin for a little space on the sides */
+    box-sizing: border-box; /* Include padding/margin in width calculation */
+  }
+
+  /* Ensure project-info-img-container fits within the screen */
+  .project-info-img-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap on small screens */
+    justify-content: center; /* Center the images */
+    gap: 5px;
+    margin: 0 10px; /* Add margin on the sides */
+    width: 100%;
+    box-sizing: border-box; /* Prevent overflow from padding or margin */
+    overflow: hidden; /* Prevent any hidden overflow */
+  }
+
+  /* Ensure individual images fit the screen */
+  .project-info-img-small, .project-info-img-large, .project-info-img-large2 {
+    width: 100%;
+    max-width: 100%; /* Ensure it stays within container */
+    height: auto;
+  }
+}
+
+
