@@ -94,7 +94,6 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  overflow-x: auto;
 }
 
 .tabs ul {
@@ -138,7 +137,7 @@ body {
 }
 
 /* Responsive Design for Mobile */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .about-me-container {
     margin: 50px 50px 100px 150px;
     grid-template-columns: 1fr;
@@ -185,13 +184,14 @@ body {
 }
 
 @media (max-width: 480px) {
+  .banner-img {
+    width: 120%;
+    height: auto;
+  }
+
   .about-me-container {
     margin: 10px;
     font-size: 20px;
-  }
-
-  .tabs {
-    overflow-x: hidden;
   }
 
   .tabs ul {
