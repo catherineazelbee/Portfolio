@@ -29,15 +29,15 @@ body {
 }
 
 .about-me-container {
-  font-size: 32px; /* Increased font size */
+  font-size: 32px; 
   color: #19181B;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
-  gap: 100px; /* Decreased gap between text and image */
-  margin: 0 auto; /* Center container */
-  max-width: 1200px; /* Optional max width to maintain layout */
+  flex-wrap: wrap; 
+  gap: 100px; 
+  margin: 0 auto;
+  max-width: 1200px; 
   text-align: left;
   margin-top: 30px;
   padding: 20px;
@@ -73,7 +73,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: -30px;
+  margin-top: -15px;
   width: 100%;
 }
 
@@ -131,7 +131,6 @@ body {
 
 .tabs a {
   display: inline-block;
-  /* Allow for horizontal scrolling */
   padding: 20px;
   text-decoration: none;
   color: #19181B;
@@ -212,12 +211,10 @@ body {
 @media (max-width: 480px) {
   .banner-img {
     width: 100%;
-    /* Set width to 100% for better centering */
     height: auto;
     overflow: hidden;
     object-fit: cover;
     margin: 0 auto;
-    /* Ensure it's centered */
     margin-top: 30px;
   }
 
@@ -231,13 +228,11 @@ body {
   .tabs ul {
     display: flex;
     justify-content: center;
-    /* Center the tabs */
     padding: 0;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
     white-space: nowrap;
-    /* Prevent wrapping */
     overflow-x: hidden;
   }
 
