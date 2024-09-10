@@ -1,6 +1,7 @@
 /* basic page setup */
 html,
 body {
+  font-family: 'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
   background-color: #F7F4FF;
@@ -28,18 +29,17 @@ body {
 }
 
 .about-me-container {
-  font-family: Verdana, sans-serif;
   font-size: 32px; /* Increased font size */
   color: #19181B;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap; /* Ensure content wraps on smaller screens */
-  gap: 20px; /* Decreased gap between text and image */
+  gap: 100px; /* Decreased gap between text and image */
   margin: 0 auto; /* Center container */
   max-width: 1200px; /* Optional max width to maintain layout */
   text-align: left;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 20px;
 }
 
@@ -49,7 +49,8 @@ body {
   justify-content: flex-start;
   flex: 1;
   text-align: left;
-  font-size: 20px;
+  font-size: 25px;
+  margin-top: -30px;
 }
 
 .about-me-headshot {
