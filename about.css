@@ -184,36 +184,110 @@ body {
 
 @media (max-width: 480px) {
   .banner-img {
-    width: 140%;
+    width: 100%;
+    /* Set width to 100% for better centering */
     height: auto;
     overflow: hidden;
     object-fit: cover;
+    margin: 0 auto;
+    /* Ensure it's centered */
+    margin-top: 30px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   .tabs ul {
     display: flex;
     justify-content: center;
+    /* Center the tabs */
     padding: 0;
     margin: 0;
     width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    /* Prevent wrapping */
+    overflow-x: hidden;
+  }
+
+  .tabs li {
+    flex-grow: 1;
+    /* Allow each tab to shrink proportionally */
+    text-align: center;
+    min-width: 0;
+    /* Allow tabs to become as small as necessary */
   }
 
   .tabs a {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 12px;
+    /* Reduce font size for smaller viewports */
+    padding: 8px 5px;
+    /* Reduce padding to fit more tabs */
     width: 100%;
+    text-align: center;
     box-sizing: border-box;
   }
 
   .project-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
-    margin: 0 10px; 
-    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: calc(100% - 20px);
     box-sizing: border-box;
     overflow: hidden;
   }
 
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about-me-text {
+    text-align: center;
+    /* Center the text */
+    padding: 0 10px;
+    width: calc(100% - 20px);
+    /* Add a bit of padding for spacing */
+    margin-bottom: 20px;
+    /* Make the text section take full width */
+  }
+
+  .about-me-headshot {
+    width: 80%;
+    /* Reduce the image size for better fit */
+    height: auto;
+    margin: 0 auto 20px auto;
+    /* Center the image and add spacing below */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Add space between buttons */
+    width: 100%;
+    /* Ensure it takes up full width */
+  }
+
+  .contact-button {
+    padding: 10px 20px;
+    /* Adjust button size for mobile */
+    font-size: 14px;
+    /* Adjust font size */
+    width: auto;
+    /* Let the buttons adjust their width */
+  }
 }
