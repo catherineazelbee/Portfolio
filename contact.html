@@ -12,7 +12,7 @@
 <body>
     <!-- BANNER IMAGE -->
     <div>
-        <image src="banner-img.png" alt="Banner Image" class="banner-img"></image>
+        <img src="banner-img.png" alt="Banner Image" class="banner-img">
     </div>
     <!-- NAV TABS -->
     <nav class="tabs">
@@ -23,29 +23,22 @@
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
-    <!-- About Me -->
-    <div class="about-me-container">
-        <div class="about-me-text">
-            <h1> Contact </h1>
-            <p> Contact me!
-            </p>
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <!-- Sample HTML Form -->
-                <form action="mailto:azelbycatherinet@gmail.com" method="POST" enctype="multipart/form-data"
-                    name="EmailForm">
-                    Name:<br>
-                    <input type="text" size="19" name="Contact-Name"><br><br>
-                    Email:<br>
-                    <input type="email" name="Contact-Email"><br><br>
-                    Message:<br>
-                    <textarea name="Contact-Message" rows="6″ cols=" 20″>
-    </textarea><br><br>
-                    <button type="submit" value="Submit">Send</button>
-                </form>
+    <!-- Contact Information -->
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <!-- Buttons -->
+            <div class="button-container">
+                <a href="resume.pdf" target="_blank" class="contact-button">Resume</a>
+                <a href="https://www.linkedin.com/in/catherineazelby/" target="_blank" class="contact-button">LinkedIn</a>
+                <a href="contact.html" target="_blank" class="contact-button">Contact</a>
             </div>
         </div>
-        <image src="headshot-img.jpg" alt="Headshot" class="about-me-headshot"></image>
+        <div class="contact-headshot">
+            <img src="headshot-img.jpg" alt="Headshot" class="headshot-img">
+        </div>
     </div>
 </body>
 
