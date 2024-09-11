@@ -294,4 +294,112 @@
 
 }
 
+@media (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .video-container {
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .project-info-img-container {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .project-info-quote-container {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .credit, .title, .small-title, .project-info-text {
+    margin: 0 10px; /* Margin adjustment to prevent text from overflowing */
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-info-text {
+    font-size: 14px;
+    margin: 0 10px; 
+    text-align: justify;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    max-width: 100%;
+    box-sizing: border-box; 
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .container, .video-container, .content-container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box; 
+    overflow: hidden;
+  }
+
+  .title, .small-title {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  .credit {
+    margin: 0 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .project-info-animatic {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .project-info-img {
+    width: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .project-info-img-large {
+    width: 90%;
+    max-width: 90%; 
+    margin: 0 auto; 
+  }
+  
+  .project-info-img-large2 {
+    width: 50%;
+    max-width: 80%; 
+    margin: 0 auto; 
+  }
+
+  .project-info-img-small, .project-info-img-small2 {
+    width: 80%;
+    max-width: 80%; 
+    margin: 0 auto; 
+  }
+}
+
 
