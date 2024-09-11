@@ -131,12 +131,14 @@
   max-height: 300px;
   width: auto;
   transition: transform 0.5s ease, filter 0.5s ease;
-  position: relative; 
+  position: center; 
 }
 
 .image-container {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
 }
 
 .project-info-img-small:hover {
@@ -401,5 +403,3 @@
     margin: 0 auto; 
   }
 }
-
-

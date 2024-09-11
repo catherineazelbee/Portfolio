@@ -284,6 +284,7 @@ body {
     width: 80%;
     height: auto;
     margin: 0 auto 20px auto;
+    margin-top: -70px;
   }
 
   .button-container {
