@@ -28,6 +28,7 @@
 
 .content-container {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -200,78 +201,8 @@
     overflow-x: hidden;
   }
 
-  .video-container {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .video-container iframe {
-    width: 100%;
-    height: auto;
-  }
-
-  .container, .content-container, .project-info-img-container, .project-info-quote-container {
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  .title, .small-title {
-    font-size: 18px;
-    margin-top: 40px;
-    width: 100%;
-  }
-
-  .credit {
-    margin: 0 50px;
-  }
-
   .project-info-text {
-    font-size: 18px;
-    margin: 0 20px;
-    text-align: justify;
-    max-width: 100%;
-  }
-
-  .project-info-img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 0 20px;
-  }
-
-  .project-info-img-small, .project-info-img-large, .project-info-img-large2 {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .project-info-img {
-    width: 50%;
-    max-width: 50%;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-
-  .project-info-img-large {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .project-info-img-large2 {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden;
-  }
-
-  .project-info-text {
-    font-size: 14px;
+    font-size: 25px;
     margin: 0 10px; 
     text-align: justify;
     word-wrap: break-word; 
@@ -314,6 +245,7 @@
     overflow-wrap: break-word;
     max-width: 100%;
     box-sizing: border-box;
+    font-size: 18px;
   }
 
   .project-info-animatic {
