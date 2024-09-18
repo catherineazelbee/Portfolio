@@ -310,7 +310,7 @@
   }
 
   .credit, .title, .small-title, .project-info-text {
-    margin: 0 10px; /* Margin adjustment to prevent text from overflowing */
+    margin: 0 10px;
     word-wrap: break-word; 
     overflow-wrap: break-word;
     max-width: 100%;
