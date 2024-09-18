@@ -141,12 +141,6 @@
   text-align: center;
 }
 
-.project-info-img-small:hover {
-  transform: scale(1.07);
-  filter: brightness(70%);
-  z-index: 1;
-}
-
 .image-title {
   position: absolute;
   top: 50%;
@@ -156,11 +150,6 @@
   font-size: 25px;
   opacity: 0;
   transition: opacity 0.5s ease;
-}
-
-.image-container:hover .image-title {
-  opacity: 1;
-  z-index: 1;
 }
 
 .project-info-img-small2 {
@@ -189,13 +178,6 @@
   color: inherit;
   text-decoration: none;
   transition: all 0.3s ease;
-}
-
-.project-info-reference-link a:hover {
-  color: #7f7aa16f;
-  font-size: 35px;
-  text-decoration: underline;
-  text-decoration-color: #7f7aa16f;
 }
 
 @media (max-width: 1200px) {
