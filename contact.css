@@ -95,16 +95,16 @@ html, body {
     }
   
     .contact-button {
-      font-size: 18px;
+      font-size: 20px;
       padding: 10px 20px;
     }
   
     .contact-info {
-      font-size: 14px;
+      font-size: 16px;
     }
   
     .contact-headshot {
-      width: 100px;
+      width: 200px;
     }
   }
   

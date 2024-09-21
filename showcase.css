@@ -168,16 +168,14 @@
   font-style: italic;
 }
 
-.project-info-reference-link {
-  font-size: 30px;
-  font-style: italic;
-  text-decoration: none;
+.highlight-link {
+  color: #c0bbd8; 
+  text-decoration: underline; 
+  cursor: pointer; 
 }
 
-.project-info-reference-link a {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s ease;
+.highlight-link:hover {
+  color: #948eb1; 
 }
 
 @media (max-width: 1200px) {
