@@ -17,6 +17,12 @@
     /** animation **/
     opacity: 0;
     animation: fadeIn 1s forwards;
+    margin: -10px;
+}
+
+.infoText {
+    padding: 0px 500px;
+    font-size: 20px;
 }
 
 @keyframes fadeIn {
@@ -39,13 +45,18 @@
 }
 
 .bridget-mp4 {
-    width: 50%;
+    width: 30%;
     height: auto;
 }
 
 .schedule-mp4 {
-    width: 60%;
+    width: 35%;
     height: auto;
+}
+
+.contact-button {
+    font-size: 20px;
+    padding: 10px 30px;
 }
 
 /* Mobile-Friendly Adjustments */
