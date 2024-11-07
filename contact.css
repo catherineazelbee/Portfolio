@@ -19,6 +19,7 @@ html, body {
   .contact-container {
     text-align: center;
     margin: 30px 10px;
+    animation: fadeInUp 0.5s ease forwards;
   }
   
   .contact-header {
