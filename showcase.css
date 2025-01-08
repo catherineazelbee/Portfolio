@@ -109,21 +109,25 @@
 .project-info-animatic {
   max-width: 800px;
   height: auto;
+  border-radius: 8px;
 }
 
 .project-info-img {
   max-width: 35%;
   height: auto;
+  border-radius: 8px;
 }
 
 .project-info-img-large {
   max-width: 50%;
   height: auto;
+  border-radius: 8px;
 }
 
 .project-info-img-large2 {
   max-width: 200px;
   height: auto;
+  border-radius: 8px;
 }
 
 /** IMAGE WITH TEXT APPEARING ABOVE **/
@@ -132,6 +136,7 @@
   width: auto;
   transition: transform 0.5s ease, filter 0.5s ease;
   position: center; 
+  border-radius: 8px;
 }
 
 .image-container {
@@ -157,6 +162,7 @@
 .project-info-img-small2 {
   max-width: 400px;
   height: auto;
+  border-radius: 8px;
 }
 
 .project-info-quote-container {

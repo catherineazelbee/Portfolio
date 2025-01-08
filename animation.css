@@ -1,3 +1,10 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
@@ -11,14 +18,18 @@
 }
 
 .video-container {
-  width: 1000px;
-  height: auto;
-  margin: 0 auto 20px;
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  background-color: #dcd7f8; 
+  padding: 8px; 
+  border-radius: 8px; 
+  transition: transform 0.3s ease;
 }
 
 .demo-reel-container {
@@ -42,18 +53,12 @@
 }
 
 .animation-video {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Full width of the video container */
+  height: auto; /* Maintain aspect ratio */
   opacity: 1;
   display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  background-color: #19181B;
-  object-fit: cover;
-  filter: brightness(100%);
-  /** animation **/
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+  transition: transform 0.3s ease;
+  border-radius: 8px; /* Optional: rounded corners */
 }
 
 @keyframes fadeIn {
@@ -78,8 +83,9 @@
 .middle-button-text {
   background-color: #dcd7f8;
   color: #19181B;
-  font-size: 25px;
+  font-size: 20px;
   padding: 16px 32px;
+  border-radius: 8px;
 }
 
 .video-container:hover .animation-video,
@@ -89,6 +95,16 @@
 
 .video-container:hover .middle-button {
   opacity: 1;
+}
+
+/* Hover effect for the video */
+.video-container:hover .animation-video {
+  transform: scale(1.05); /* Slightly enlarge the video */
+}
+
+/* Optional: Hover effect for the video container */
+.video-container:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
 }
 
 .text {

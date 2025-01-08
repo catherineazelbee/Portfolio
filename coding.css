@@ -30,6 +30,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -48,11 +49,19 @@
 .bridget-mp4 {
     width: 55%;
     height: auto;
+    border-radius: 8px;
+    background-color: #dcd7f8;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .schedule-mp4 {
     width: 55%;
     height: auto;
+    border-radius: 8px;
+    background-color: #dcd7f8;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .contact-button {
@@ -64,11 +73,12 @@
 @media (max-width: 1200px) {
     .project {
         font-size: 16px;
-        margin-left: 20px; 
+        margin-left: 20px;
         margin-right: 20px;
     }
-    
-    .bridget-mp4, .schedule-mp4 {
+
+    .bridget-mp4,
+    .schedule-mp4 {
         width: 60%;
     }
 }
@@ -80,8 +90,9 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    
-    .bridget-mp4, .schedule-mp4 {
+
+    .bridget-mp4,
+    .schedule-mp4 {
         width: 80%;
     }
 }
@@ -89,23 +100,23 @@
 @media (max-width: 480px) {
     .project {
         font-size: 14px;
-        width: 95%; 
+        width: 95%;
         margin-left: 5px;
         margin-right: 5px;
     }
-    
+
     .project h1,
     .project h3,
     .project p {
         margin-bottom: 8px;
     }
-    
-    .bridget-mp4, .schedule-mp4 {
-        width: 100%; 
+
+    .bridget-mp4,
+    .schedule-mp4 {
+        width: 100%;
     }
-    
+
     .button-container {
         margin-bottom: 8px;
     }
 }
-

@@ -4,7 +4,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
-  background-color: #f1f1f1;
+  background-color: #efeff0;
 }
 
 @keyframes fadeInUp {
@@ -68,6 +68,7 @@ body {
 .about-me-headshot {
   width: 400px;
   height: auto;
+  border-radius: 8px;
 }
 
 @keyframes fadeIn {
@@ -108,6 +109,7 @@ body {
   margin: 10px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
 }
 
 .contact-button:hover {
@@ -166,6 +168,7 @@ body {
   width: 100%;
   height: auto;
   margin-top: 30px;
+  border-radius: 8px;
 }
 
 /* Responsive Design for Mobile */
