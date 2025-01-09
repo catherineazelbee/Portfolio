@@ -156,12 +156,14 @@ body {
 .tabs a.active {
   background-color: #b8b1e36f;
   color: #19181B;
+  border-radius: 8px;
 }
 
 .tabs a:hover {
   background-color: #b8b1e36f;
   font-size: 22px;
   color: #19181B;
+  border-radius: 8px;
 }
 
 .demo-video {

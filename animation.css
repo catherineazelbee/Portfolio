@@ -19,7 +19,7 @@
 
 .video-container {
   width: 100%; 
-  max-width: 600px; 
+  max-width: 650px; 
   height: auto; 
   display: flex;
   justify-content: center;
@@ -53,12 +53,12 @@
 }
 
 .animation-video {
-  width: 100%; /* Full width of the video container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  height: auto; 
   opacity: 1;
   display: block;
   transition: transform 0.3s ease;
-  border-radius: 8px; /* Optional: rounded corners */
+  border-radius: 8px;
 }
 
 @keyframes fadeIn {
@@ -97,14 +97,14 @@
   opacity: 1;
 }
 
-/* Hover effect for the video */
+
 .video-container:hover .animation-video {
-  transform: scale(1.05); /* Slightly enlarge the video */
+  transform: scale(1.05); 
 }
 
-/* Optional: Hover effect for the video container */
+
 .video-container:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .text {
@@ -131,13 +131,17 @@
 /* Responsive Design for Mobile */
 @media (max-width: 1200px) {
   .video-container {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .demo-reel-container {
       width: 70%;
       margin: 0 auto;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
