@@ -64,6 +64,15 @@
     border-radius: 8px;
 }
 
+.metaMuseum-mp4 {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #dcd7f8;
+    padding: 8px;
+    border-radius: 8px;
+}
+
 .contact-button {
     font-size: 20px;
     padding: 10px 30px;
