@@ -1,7 +1,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 50px;
   margin: 10px;
 }
 
@@ -19,7 +19,7 @@
 
 .video-container {
   width: 100%; 
-  max-width: 650px; 
+  max-width: 1000px; 
   height: auto; 
   display: flex;
   justify-content: center;
