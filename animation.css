@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   margin: 10px;
+  padding: 10px;
 }
 
 .project-container {
@@ -130,6 +131,7 @@
 
 /* Responsive Design for Mobile */
 @media (max-width: 1200px) {
+
   .video-container {
     width: 100%;
     margin: 0 auto;
