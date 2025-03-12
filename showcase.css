@@ -365,6 +365,7 @@
     margin: 0 10px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    font-size: 12px;
   }
 
   .project-info-animatic {
