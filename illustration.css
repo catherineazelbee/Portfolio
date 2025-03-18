@@ -1,15 +1,16 @@
 /* Center the gallery container and apply grid layout */
 .illustration-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Default for larger screens */
     gap: 30px; /* Space between items */
     max-width: 1200px; /* Max width of the grid */
     margin: 40px auto;
     justify-items: center; /* Center the items in the grid */
-  }
-  
-  /* Each illustration item container */
-  .content-container {
+    align-items: start; /* Align items to the start of the grid cell */
+}
+
+/* Each illustration item container */
+.content-container {
     background-color: #dcd7f8; /* Light purple background */
     padding: 10px;
     border-radius: 8px;
@@ -17,46 +18,52 @@
     transition: transform 0.3s ease;
     text-align: center;
     width: 100%; /* Ensure container takes up full width */
+    max-width: 350px; /* Set a max width for the container */
     height: auto; /* Height adjusts based on content */
     position: relative;
-  }
-  
-  /* Slight scale on hover */
-  .content-container:hover {
-    transform: scale(1.03);
-  }
-  
-  /* Title styling - smaller font and bold */
-  .content-container h3 {
+    overflow: hidden; /* Prevent overflow on hover */
+}
+
+/* Slight scale on hover */
+.content-container:hover {
+    transform: scale(1.1); /* Slightly reduce scale to prevent overflow */
+    z-index: 1;
+}
+
+/* Title styling - smaller font and bold */
+.content-container h3 {
     margin: 10px 0;
     font-size: 1.2em; /* Smaller font */
     color: #252325;
     font-weight: bold;
-  }
-  
-  /* Media styling - retain original aspect ratio */
-  .content-container img,
-  .content-container video {
+}
+
+/* Media styling - retain original aspect ratio */
+.content-container img,
+.content-container video {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 8px; /* Smooth corners on media */
-  }
-  
-  /* Responsive adjustments: adjust grid layout for different screen sizes */
-  @media (max-width: 900px) {
+    margin-bottom: 10px; /* Small gap between images */
+}
+
+/* Responsive adjustments: adjust grid layout for different screen sizes */
+@media (min-width: 1200px) {
     .illustration-gallery {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* More compact grid on smaller screens */
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Larger items on very large screens */
     }
-  }
-  
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 900px) {
     .illustration-gallery {
-      grid-template-columns: 1fr; /* Single column layout for small screens */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* More compact grid on smaller screens */
     }
-  }
-  
-  
-  
-  
+}
+
+@media (max-width: 600px) {
+    .illustration-gallery {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+}
