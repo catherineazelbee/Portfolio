@@ -1,52 +1,62 @@
-
-/* Center the project container */
-.project-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-/* Style for the illustration grid */
-.illustration-grid {
+/* Center the gallery container and apply grid layout */
+.illustration-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between items */
-    max-width: 1200px; /* Max width for the grid */
-    margin: 0 auto; /* Center the grid */
-}
-
-/* Style for each content container */
-.content-container {
-    background-color: #fff; /* White background for each item */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden; /* Prevent overflow */
-    transition: transform 0.3s; /* Smooth hover effect */
-}
-
-/* Hover effect for content containers */
-.content-container:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Style for headings */
-.content-container h3 {
-    margin: 10px;
-    font-size: 1.5em; /* Larger font size for headings */
-    text-align: center; /* Center the text */
-}
-
-/* Style for images and videos */
-.content-container img,
-.content-container video {
-    width: 100%; /* Make media responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove bottom space */
-}
-
-/* Optional: Add some padding to the body */
-body {
-    padding: 20px;
-}
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive columns */
+    gap: 30px; /* Space between items */
+    max-width: 1200px; /* Max width of the grid */
+    margin: 40px auto;
+    justify-items: center; /* Center the items in the grid */
+  }
+  
+  /* Each illustration item container */
+  .content-container {
+    background-color: #dcd7f8; /* Light purple background */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 100%; /* Ensure container takes up full width */
+    height: auto; /* Height adjusts based on content */
+    position: relative;
+  }
+  
+  /* Slight scale on hover */
+  .content-container:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Title styling - smaller font and bold */
+  .content-container h3 {
+    margin: 10px 0;
+    font-size: 1.2em; /* Smaller font */
+    color: #252325;
+    font-weight: bold;
+  }
+  
+  /* Media styling - retain original aspect ratio */
+  .content-container img,
+  .content-container video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Smooth corners on media */
+  }
+  
+  /* Responsive adjustments: adjust grid layout for different screen sizes */
+  @media (max-width: 900px) {
+    .illustration-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* More compact grid on smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .illustration-gallery {
+      grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+  }
+  
+  
+  
+  

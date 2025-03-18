@@ -167,10 +167,12 @@ body {
 }
 
 .demo-video {
-  width: 100%;
+  width: 80%;
+  max-width: 900px; 
   height: auto;
-  margin-top: 30px;
+  margin: 30px auto; 
   border-radius: 8px;
+  display: block;
 }
 
 /* Responsive Design for Mobile */
@@ -222,6 +224,10 @@ body {
 
   .tabs li {
     margin: 0 5px;
+  }
+  .demo-video {
+    width: 90%; /* Make video slightly smaller on smaller screens */
+    max-width: 600px; /* Limit max width */
   }
 }
 
@@ -324,5 +330,10 @@ body {
     padding: 10px 20px;
     font-size: 14px;
     width: auto;
+  }
+
+  .demo-video {
+    width: 100%; /* Full width on mobile screens */
+    max-width: none; /* No max-width on smaller screens */
   }
 }
