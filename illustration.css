@@ -1,0 +1,52 @@
+
+/* Center the project container */
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Style for the illustration grid */
+.illustration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+    max-width: 1200px; /* Max width for the grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Style for each content container */
+.content-container {
+    background-color: #fff; /* White background for each item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for content containers */
+.content-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Style for headings */
+.content-container h3 {
+    margin: 10px;
+    font-size: 1.5em; /* Larger font size for headings */
+    text-align: center; /* Center the text */
+}
+
+/* Style for images and videos */
+.content-container img,
+.content-container video {
+    width: 100%; /* Make media responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
+}
+
+/* Optional: Add some padding to the body */
+body {
+    padding: 20px;
+}
