@@ -36,20 +36,27 @@
       <!-- Item: Phone Call Illustration -->
       <div class="content-container">
         <h3>Who's on the Phone?</h3>
-        <video src="illust_phoneCall.mp4" alt="Phone Call Illustration" autoplay loop muted playsinline></video>
+        <img src="illust_phoneCall.gif" alt="Phone Call Illustration">
+        <div class="hover-overlay"></div>
+        <div class="see-project-btn">See the Project</div>
       </div>
 
       <!-- Item: Comic Strip -->
       <div class="content-container">
         <h3>A Day in My Life: Comic Strip</h3>
         <img src="illust_Comic.png" alt="Comic Illustration">
+        <div class="hover-overlay"></div>
+        <div class="see-project-btn">See the Project</div>
       </div>
-
+      
+      
       <!-- Item: Fall Game Jam 2024 Concept Art -->
       <div class="content-container">
         <h3>Fall Game Jam 2024: Character Concept Art</h3>
         <img src="illust_millieVars.png" alt="Concept Art">
         <img src="illust_gjVars.png" alt="Concept Art">
+        <div class="hover-overlay"></div>
+        <div class="see-project-btn">See the Project</div>
       </div>
 
       <!-- Item: Japan Study Abroad Illustrations -->
@@ -57,22 +64,38 @@
         <h3>Japan Study Abroad: Character Illustrations</h3>
         <img src="illust_aliaBase.png" alt="Character Illustration">
         <img src="illust_jacobBase.png" alt="Character Illustration">
+        <div class="hover-overlay"></div>
+        <div class="see-project-btn">See the Project</div>
       </div>
 
       <!-- Item: Knight Illustration -->
       <div class="content-container">
         <h3>Princess Flora</h3>
         <img src="illust_princess.gif" alt="Princess Illustration">
+        <div class="hover-overlay"></div>
+        <div class="see-project-btn">See the Project</div>
       </div>
 
       <!-- Item: Princess Illustration -->
       <div class="content-container">
         <h3>Knight Mars</h3>
         <img src="illust_knight.gif" alt="Knight Illustration">
+        <div class="hover-overlay"></div>
+        <div class="see-project-btn">See the Project</div>
       </div>
 
     </div>
   </div>
+  <!-- Modal Overlay -->
+<div id="image-modal" class="modal-overlay">
+  <div class="modal-content">
+    <img id="modal-img" src="" alt="Large Illustration">
+    <div class="modal-description" id="modal-description">Description here</div>
+  </div>
+</div>
+
+<!-- Script -->
+<script src="illustration.js"></script>
 </body>
 
 </html>

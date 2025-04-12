@@ -7,6 +7,17 @@ body {
   background-color: #efeff0;
 }
 
+/* Prevent focus outlines and caret blinking */
+*:focus {
+  outline: none !important;
+  caret-color: transparent !important;
+}
+
+/* Prevent text selection altogether */
+body {
+  user-select: none;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0.5;
