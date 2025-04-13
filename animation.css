@@ -1,4 +1,4 @@
-/* Grid container for all projects */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -7,9 +7,8 @@
   padding: 10px;
 }
 
-/* Single, unified purple container per project */
 .project-container {
-  background-color: #dcd7f8; /* Purple background */
+  background-color: #dcd7f8; 
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(75, 75, 75, 0.3);
@@ -28,19 +27,18 @@
   font-size: 20px;
   color: #252325;
   font-weight: bold;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
 }
 
-/* Ensure links don't add an underline */
 .project-container a {
   text-decoration: none;
 }
 
-/* Video styling: enforce a 16:9 ratio */
+
 .animation-video {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover; /* Crop to fill the container */
+  object-fit: cover; 
   display: block;
 }
 
@@ -62,7 +60,6 @@
   border-radius: 8px;
 }
 
-/* Hover effects applied to the unified container */
 .project-container:hover .animation-video {
   filter: brightness(50%);
 }
@@ -71,7 +68,42 @@
   opacity: 1;
 }
 
-/* Responsive Design */
+/* MoCap Video Container */
+.mocap-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Each MoCap item with title and video */
+.mocap-item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the small titles above each video */
+.mocap-item h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #252325;
+  text-align: center;
+}
+
+/* Responsive video styling with constrained dimensions */
+.mocap-item video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -98,7 +130,6 @@
   }
 }
 
-/* Increase grid gap and add extra padding on very large screens to prevent hover overflow */
 @media (min-width: 1600px) {
   .projects-grid {
     gap: 60px;
