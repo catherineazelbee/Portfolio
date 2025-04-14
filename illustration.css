@@ -1,12 +1,9 @@
-/* Wrapper to center the gallery using flexbox */
 .gallery-wrapper {
     display: flex;
     justify-content: center;
     padding: 0 15px;
-    /* Extra side padding for breathing room */
 }
 
-/* Gallery container using CSS columns for a masonry layout */
 .illustration-gallery {
     max-width: 1200px;
     width: 100%;
@@ -14,7 +11,6 @@
     column-count: 3;
     column-gap: 30px;
     margin: 40px auto;
-    /* Centered if width is less than viewport */
 }
 
 .content-container {
@@ -25,9 +21,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     margin: 0 0 30px;
-    /* Space between items */
     display: inline-block;
-    /* Needed for the column layout */
     width: 100%;
     max-width: 350px;
     position: relative;
@@ -35,13 +29,11 @@
     transform-origin: center center;
 }
 
-/* Hover effect for larger screens */
 .content-container:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Title styling */
 .content-container h3 {
     margin: 10px 0;
     font-size: 1.2em;
@@ -49,7 +41,6 @@
     font-weight: bold;
 }
 
-/* Media styling for images and videos */
 .content-container img,
 .content-container video {
     max-width: 100%;
@@ -59,27 +50,22 @@
     border-radius: 8px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
     .illustration-gallery {
         column-count: 2;
-        /* Two columns on medium screens */
     }
 }
 
 @media (max-width: 600px) {
     .illustration-gallery {
         column-count: 1;
-        /* Single column on small screens */
     }
 
-    /* Disable hover scaling on small screens for usability */
     .content-container:hover {
         transform: scale(1);
     }
 }
 
-/* Modal Styles */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -95,9 +81,9 @@
 
 .modal-content {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     justify-content: center;
-    flex-wrap: wrap; /* Allow wrapping */
+    flex-wrap: wrap; 
     max-width: 90%;
     max-height: 90%;
     padding: 20px;
@@ -108,11 +94,11 @@
 }
 
 .modal-content img {
-    max-width: 100%; /* Allow image to take full width available */
+    max-width: 100%;
     max-height: 80vh;
     border-radius: 10px;
-    flex-shrink: 0; /* Prevent shrinking */
-    object-fit: contain; /* Maintain aspect ratio */
+    flex-shrink: 0; 
+    object-fit: contain;
 }
 
 
@@ -127,15 +113,10 @@
 }
 
 
-/* Hover Overlay Button */
-
-/* Make sure content-container is relatively positioned */
 .content-container {
     position: relative;
-    /* other styles already present */
 }
 
-/* The hover button */
 .see-project-btn {
     position: absolute;
     top: 50%;
@@ -154,27 +135,25 @@
     z-index: 2;
 }
 
-/* Show button only on hover */
 .content-container:hover .see-project-btn {
     opacity: 1;
     pointer-events: auto;
     cursor: pointer;
 }
 
-/* Overlay that darkens the image on hover */
 .hover-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+    background-color: rgba(0, 0, 0, 0); 
     transition: background-color 0.3s ease;
     border-radius: 8px;
     z-index: 1;
   }
   
   .content-container:hover .hover-overlay {
-    background-color: rgba(0, 0, 0, 0.2); /* Slight darkening on hover */
+    background-color: rgba(0, 0, 0, 0.2);
   }
   
