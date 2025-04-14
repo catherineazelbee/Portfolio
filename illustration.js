@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalImg = document.getElementById("modal-img");
     const modalDesc = document.getElementById("modal-description");
 
-    // Predefined descriptions
+    // prede
     const descriptions = {
         "illust_Comic.png": "Comic strip created for Color and Composition final project. Created using Adobe Photoshop 2023.",
         "illust_millieVars.png": `Concept art of Millie for the Fall Game Jam 2024 — rough personality poses and outfits. <a href="https://yourgamejamlink.com" target="_blank">View the Game Jam Project</a>`,
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Prevent modal from opening if a link was clicked
       if (e.target.tagName.toLowerCase() === "a") return;
 
-      // Get the first image inside the container
+      // get img in container
       const img = container.querySelector("img");
       if (!img) return;
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Close modal when clicking anywhere outside the content
+  // close modal when click outside of the image or description
   modal.addEventListener("click", (e) => {
     if (e.target === modal || e.target === modalImg || e.target === modalDesc) {
       modal.style.display = "none";
