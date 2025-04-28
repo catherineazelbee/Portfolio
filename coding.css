@@ -64,7 +64,7 @@
     transition: background-color 0.3s ease;
   }
   .contact-button:hover {
-    background-color: #c0bbdd;
+    background-color: rgb(173, 166, 216);
   }
   
   /* Responsive breakpoints */
