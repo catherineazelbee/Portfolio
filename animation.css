@@ -1,4 +1,26 @@
+/* animation.css */
 
+/* Strip link underlines inside cards */
+.project-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- New icon styling --- */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.software-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Grid layout: two columns */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -7,42 +29,45 @@
   padding: 10px;
 }
 
+/* Card styling */
 .project-container {
-  background-color: #dcd7f8; 
+  background-color: #dcd7f8;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(75, 75, 75, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
   position: relative;
+  padding: 20px;
 }
-
 .project-container:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(75, 75, 75, 0.5);
 }
 
-/* Title styling */
+/* Title & description */
 .project-title {
   font-size: 20px;
   color: #252325;
   font-weight: bold;
-  text-decoration: none; 
+  margin-bottom: 4px;
+}
+.project-description {
+  font-size: 16px;
+  color: #252325;
+  margin-bottom: 16px;
 }
 
-.project-container a {
-  text-decoration: none;
-}
-
-
+/* Video styling */
 .animation-video {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
+  margin-bottom: 16px;
 }
 
-/* Middle button overlay */
+/* Hover overlay button */
 .middle-button {
   position: absolute;
   top: 50%;
@@ -51,7 +76,6 @@
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 .middle-button-text {
   background-color: #dcd7f8;
   color: #19181B;
@@ -59,45 +83,57 @@
   padding: 14px 28px;
   border-radius: 8px;
 }
-
 .project-container:hover .animation-video {
   filter: brightness(50%);
 }
-
 .project-container:hover .middle-button {
   opacity: 1;
 }
 
+/* Responsive breakpoints */
 @media (max-width: 1200px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 768px) {
-  .middle-button-text {
+  .project-title {
+    font-size: 18px;
+  }
+  .project-description {
     font-size: 14px;
+  }
+  .middle-button-text {
+    font-size: 16px;
     padding: 12px 24px;
   }
+  .software-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-width: 480px) {
   .project-title {
     font-size: 16px;
   }
-}
-
-@media (max-width: 480px) {
-  .middle-button-text {
+  .project-description {
     font-size: 12px;
+  }
+  .middle-button-text {
+    font-size: 14px;
     padding: 10px 20px;
   }
-  .project-title {
-    font-size: 14px;
+  .software-icon {
+    width: 24px;
+    height: 24px;
   }
 }
-
 @media (min-width: 1600px) {
   .projects-grid {
     gap: 60px;
     padding: 60px;
   }
 }
+
+
 

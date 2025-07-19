@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // prede
     const descriptions = {
         "illust_Comic.png": "Comic strip created for Color and Composition final project. Created using Adobe Photoshop 2023.",
-        "illust_millieVars.png": `Concept art of Millie for the Fall Game Jam 2024 — rough personality poses and outfits. <a href="https://yourgamejamlink.com" target="_blank">View the Game Jam Project</a>`,
-        "illust_gjVars.png": "",
+        "illust_MaxBlaire.png": "Illustration of original characters Max and Blair. Created in Adobe Photoshop 2025.",
         "illust_mindysFriends.png": "Illustration of original characters (from left: Jacob, Mindy, Alia). Created in Adobe Photoshop 2025.",
-        "illust_princess.gif": "Princess Flora character design and illustration created for Game Jam: Slice of Jam 2025. You can play the game here (add link). Created using Adopbe Photoshop 2025.",
-        "illust_knight.gif": "Knight Mars character design and illustration created for Game Jam: Slice of Jam 2025. You can play the game here (add link). Created using Adopbe Photoshop 2025.",
+        "illust_princess.gif": "Princess Flora character design and illustration created for Game Jam: Slice of Jam 2025. Created using Adobe Photoshop 2025.",
+        "illust_knight.gif": "Knight Mars character design and illustration created for Game Jam: Slice of Jam 2025. Created using Adobe Photoshop 2025.",
         "illust_phoneCall.gif": "Animated GIF illustration. Created using Adobe Photoshop 2025."
     };
 
