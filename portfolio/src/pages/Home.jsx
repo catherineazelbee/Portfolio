@@ -51,7 +51,7 @@ function Home() {
               Hi, I'm Cat! I'm a 3D generalist and technical director with experience in Maya, Unreal Engine, and Adobe Creative Suite, plus coding languages like Python and C++. 
             </p>
             <p>
-              I'm currently serving as Northeastern's Animation Club President and working as a 3D Visual Designer at hyLite Studio, creating 3D models for Meta Horizon Worlds. I love participating in hackathons, jams, and competitions — always looking for new opportunities to learn and grow!
+              I'm currently serving as Northeastern's Animation Club President and working as a 3D Visual Designer at hyLite Studio, creating 3D models for Meta Horizon Worlds. I love participating in hackathons, jams, and competitions and am always looking for new opportunities to learn and grow!
             </p>
           </div>
         </div>
