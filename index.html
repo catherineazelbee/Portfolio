@@ -5,6 +5,18 @@
     <link rel="icon" type="image/png" href="/assets/favicon-CmmvKXIG.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catherine Azelby</title>
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <script type="module" crossorigin src="/assets/index-Dr82A30o.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-D-Fl7sQD.css">
   </head>
