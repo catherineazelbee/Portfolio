@@ -176,3 +176,18 @@
 .illustration-gallery .content-container:hover .hover-overlay {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.illustration-gallery .content-container video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+}
+
+.modal-content video {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 10px;
+  object-fit: contain;
+}
