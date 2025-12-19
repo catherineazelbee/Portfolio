@@ -1,0 +1,355 @@
+/* ========================================
+   CATHERINE AZELBY PORTFOLIO - PURPLE THEME
+   ======================================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+
+/* CSS Variables */
+:root {
+  --purple-lightest: #f5f3ff;
+  --purple-light: #dcd7f8;
+  --purple-main-select: #c4bee4;
+  --purple-main: #c4bdef;
+  --purple-dark: #a89ed4;
+  --purple-darker: #8b7fc7;
+  --purple-accent: #6b5b95;
+  --text-dark: #2d2a3e;
+  --text-medium: #5a5670;
+  --white: #ffffff;
+  --shadow: 0 8px 30px rgba(107, 91, 149, 0.15);
+  --shadow-lg: 0 15px 50px rgba(107, 91, 149, 0.2);
+  --transition: all 0.3s ease;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+.tabs {
+  background-color: var(--purple-light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.tabs ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  margin: 0;
+}
+
+.tabs a {
+  display: inline-block;
+  padding: 20px 30px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.tabs a.active {
+  background-color: var(--purple-main-select);
+}
+
+.tabs a:hover {
+  background-color: var(--purple-main-select);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero-section {
+  background: linear-gradient(180deg, 
+    #ffffff 0%,
+    #ffffff 5%,
+    var(--purple-lightest) 20%,
+    var(--purple-light) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 40px 80px;
+  text-align: center;
+}
+
+.hero-content {
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-medium);
+  margin-bottom: 20px;
+}
+
+.hero-demo-video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  background-color: var(--white);
+  color: var(--text-dark);
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--purple-light);
+}
+
+/* ========================================
+   ABOUT SECTION
+   ======================================== */
+.about-section {
+  background-color: var(--white);
+  padding: 60px 40px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.about-headshot {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-medium);
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   BANNER (for other pages)
+   ======================================== */
+.banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  margin-top: 62px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ========================================
+   SHARED BUTTON STYLES
+   ======================================== */
+.contact-button {
+  background-color: var(--white);
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 50px;
+  box-shadow: var(--shadow);
+}
+
+.contact-button:hover {
+  background-color: var(--purple-light);
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 56px;
+  }
+  
+  .hero-demo-video {
+    max-width: 700px;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .about-headshot {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs a {
+    padding: 16px 20px;
+    font-size: 14px;
+  }
+  
+  .hero-section {
+    padding: 100px 24px 60px;
+  }
+  
+  .hero-title {
+    font-size: 42px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .hero-content {
+    margin-bottom: 30px;
+  }
+  
+  .hero-demo-video {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .about-section {
+    padding: 60px 24px;
+  }
+  
+  .about-text h2 {
+    font-size: 28px;
+  }
+  
+  .about-headshot {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tabs a {
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+  
+  .hero-section {
+    padding: 90px 20px 50px;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .hero-button {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 50px 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 24px;
+  }
+  
+  .about-text p {
+    font-size: 15px;
+  }
+  
+  .about-headshot {
+    width: 200px;
+  }
+}
