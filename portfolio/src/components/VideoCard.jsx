@@ -13,10 +13,10 @@ function VideoCard({ title, videoSrc, linkTo, poster }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
-          observer.disconnect() // Stop observing once visible
+          observer.disconnect()
         }
       },
-      { threshold: 0.1, rootMargin: '100px' } // Start loading slightly before visible
+      { threshold: 0.1, rootMargin: '100px' }
     )
 
     if (containerRef.current) {
@@ -26,10 +26,27 @@ function VideoCard({ title, videoSrc, linkTo, poster }) {
     return () => observer.disconnect()
   }, [])
 
+  // Play on hover
+  const handleMouseEnter = () => {
+    if (videoRef.current && isLoaded) {
+      videoRef.current.play()
+    }
+  }
+
+  // Pause when not hovering
+  const handleMouseLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.pause()
+      videoRef.current.currentTime = 0  // Reset to beginning
+    }
+  }
+
   return (
     <div
       className="project-container"
       ref={containerRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <Link to={linkTo}>
         <h1 className="project-title">{title}</h1>
@@ -40,7 +57,6 @@ function VideoCard({ title, videoSrc, linkTo, poster }) {
             className="animation-video"
             src={videoSrc}
             poster={poster}
-            autoPlay
             loop
             muted
             playsInline
@@ -48,10 +64,9 @@ function VideoCard({ title, videoSrc, linkTo, poster }) {
             onLoadedData={() => setIsLoaded(true)}
           />
         ) : (
-          // Placeholder while not visible - maintains layout
           <div 
             className="animation-video" 
-            style={{ backgroundColor: '#dcd7f8' }}
+            style={{ backgroundColor: '#dcd7f8', aspectRatio: '16/9' }}
           />
         )}
         
