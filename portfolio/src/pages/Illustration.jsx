@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
-import Banner from '../components/Banner'
 import '../styles/about.css'
 import '../styles/illustration.css'
 
@@ -63,40 +62,41 @@ function Illustration() {
   }
 
   return (
-    <>
-      <Banner />
-      <Navbar />
+  <>
+    <Navbar />
 
-      <div className="gallery-wrapper">
-        <div className="illustration-gallery">
-          {illustrations.map((item, index) => (
-            <div
-              key={index}
-              className="content-container"
-              onClick={() => openModal(item)}
-            >
-              <h3>{item.title}</h3>
-              <img src={item.src} alt={item.title} />
-              <div className="hover-overlay"></div>
-              <div className="see-project-btn">See the Project</div>
-            </div>
-          ))}
+    <div className="page-container">
+      <h1 className="page-title">Illustration</h1>
+      
+      <div className="illustration-gallery">
+        {illustrations.map((item, index) => (
+          <div
+            key={index}
+            className="content-container"
+            onClick={() => openModal(item)}
+          >
+            <h3>{item.title}</h3>
+            <img src={item.src} alt={item.title} />
+            <div className="hover-overlay"></div>
+            <div className="see-project-btn">See the Project</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Modal */}
+    {modalOpen && selectedImage && (
+      <div className="modal-overlay" onClick={closeModal}>
+        <div className="modal-content">
+          <div className="modal-header">
+            <h2 className="modal-title">{selectedImage.title}</h2>
+            <p className="modal-subtitle">{selectedImage.description}</p>
+          </div>
+          <img src={selectedImage.src} alt={selectedImage.title} />
         </div>
       </div>
-
-      {/* Modal */}
-      {modalOpen && selectedImage && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2 className="modal-title">{selectedImage.title}</h2>
-              <p className="modal-subtitle">{selectedImage.description}</p>
-            </div>
-            <img src={selectedImage.src} alt={selectedImage.title} />
-          </div>
-        </div>
-      )}
-    </>
+    )}
+  </>
   )
 }
 
