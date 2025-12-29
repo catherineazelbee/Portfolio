@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
@@ -29,7 +29,7 @@ function Home() {
             </a>
           </div>
         </div>
-        
+
         {/* Demo Reel in Hero */}
         <video
           className="hero-demo-video"
@@ -48,10 +48,10 @@ function Home() {
           <div className="about-text">
             <h2>About Me</h2>
             <p>
-              Hi, I'm Cat! I'm a 3D generalist and technical director with experience in Maya, Unreal Engine, and Adobe Creative Suite, plus coding languages like Python and C++. 
+              Hi, I'm Cat! I'm a 3D artist, animator, and developer. I have experience in various creative programs such as Maya, Unreal Engine, and Adobe Creative Suite. I am a passionate learner and collaborator, currently serving as Northeastern's Animation Club's President and participating in various hackathons, jams, and competitions. 
             </p>
             <p>
-              I'm currently serving as Northeastern's Animation Club President and working as a 3D Visual Designer at hyLite Studio, creating 3D models for Meta Horizon Worlds. I love participating in hackathons, jams, and competitions and am always looking for new opportunities to learn and grow!
+              I am always looking for new opportunities to learn and grow in the 3D industry. I am currently working as an XR Developer at MIT LEAP Group, and am an incoming Advanced Development Group Intern at ILM.
             </p>
           </div>
         </div>
