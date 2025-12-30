@@ -14,27 +14,31 @@ function Coding() {
   const projects = [
     {
       title: "EasyBlink Maya Plugin",
-      description: "Plugin for quickly animating blinks for multiple character rigs in Autodesk Maya. Built in Visual Studio Code using Python and MEL.",
+      skills: "Python · MEL · Maya",
+      description: "Plugin for quickly animating blinks for multiple character rigs in Autodesk Maya.",
       videoSrc: easyBlinkVideo,
       buttonText: "GitHub",
       buttonLink: "https://github.com/catherineazelbee/EasyBlink"
     },
     {
       title: "LayoutLink: USD Maya/Unreal Plugin",
-      description: "Enables scene data exchange using industry-standard USD composition between Maya and Unreal Engine 5. Work-in-progress senior capstone project. Built in Visual Studio Code using Python, MEL, and C++.",
+      skills: "Python · MEL · C++ · USD · Maya · Unreal Engine",
+      description: "Enables scene data exchange using industry-standard USD composition between Maya and Unreal Engine 5. Work-in-progress senior capstone project.",
       videoSrc: layoutLinkVideo,
       buttonText: "GitHub",
       buttonLink: "https://github.com/catherineazelbee/LayoutLink"
     },
     {
       title: "VR Field Trips",
-      description: "Virtual reality playable prototype focusing on immersive STEM education. Simulates the role of a car crash test engineer to reinforce critical physics concepts through experiential learning. Created with Unreal Engine blueprint scripting and Fab assets.",
+      skills: "Unreal Engine · UE Blueprints · C++",
+      description: "Virtual reality playable prototype focusing on immersive STEM education. Simulates the role of a car crash test engineer to reinforce critical physics concepts.",
       videoSrc: vrftVideo,
       buttonText: "Lab Website",
       buttonLink: "https://xred.sites.northeastern.edu/2025/03/26/lab-project-2/"
     },
     {
       title: "Portfolio Website",
+      skills: "React · JavaScript · CSS",
       description: "Personal portfolio website developed in React to showcase animation and development work.",
       videoSrc: portfolioVideo,
       buttonText: "GitHub",
@@ -45,7 +49,7 @@ function Coding() {
   return (
     <>
       <Navbar />
-      
+
       <div className="page-container">
         <h1 className="page-title">Code</h1>
         <div className="projects-grid">
@@ -53,6 +57,7 @@ function Coding() {
             <CodingCard
               key={index}
               title={project.title}
+              skills={project.skills}
               description={project.description}
               videoSrc={project.videoSrc}
               buttonText={project.buttonText}

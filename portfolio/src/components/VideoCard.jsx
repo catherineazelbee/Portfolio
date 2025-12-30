@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-function VideoCard({ title, videoSrc, linkTo, poster }) {
+function VideoCard({ title, skills, videoSrc, linkTo, poster }) {
   const containerRef = useRef(null)
   const videoRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -50,6 +50,7 @@ function VideoCard({ title, videoSrc, linkTo, poster }) {
     >
       <Link to={linkTo}>
         <h1 className="project-title">{title}</h1>
+        {skills && <p className="project-skills">{skills}</p>}
         
         {isVisible ? (
           <video

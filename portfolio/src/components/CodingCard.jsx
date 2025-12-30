@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-function CodingCard({ title, description, videoSrc, buttonText, buttonLink }) {
+function CodingCard({ title, skills, description, videoSrc, buttonText, buttonLink }) {
   const containerRef = useRef(null)
   const videoRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -30,6 +30,7 @@ function CodingCard({ title, description, videoSrc, buttonText, buttonLink }) {
       ref={containerRef}
     >
       <h1 className="project-title">{title}</h1>
+      {skills && <p className="project-skills">{skills}</p>}
       <p className="project-description">{description}</p>
       
       {isVisible ? (

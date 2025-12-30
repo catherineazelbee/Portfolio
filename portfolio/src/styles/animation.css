@@ -111,6 +111,14 @@
   opacity: 1;
 }
 
+.project-skills {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: var(--purple-darker, #8b7fc7);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .projects-grid {
