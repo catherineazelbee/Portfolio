@@ -3,7 +3,7 @@ import '../styles/about.css'
 
 // Import assets
 import headshotImg from '../assets/headshot-img.jpg'
-import demoReel from '../assets/demoReel.mp4'
+const demoReel = "https://media.catherineazelby.com/demoReel.mp4";
 import thumbnail from '../assets/thumbnail.png'
 import resumePdf from '../assets/resume.pdf'
 
