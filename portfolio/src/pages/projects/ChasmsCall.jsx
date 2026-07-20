@@ -3,13 +3,13 @@ import '../../styles/about.css'
 import '../../styles/showcase.css'
 
 // Import assets
-import chasmCallVideo from '../../assets/chasmCallFinal.mp4'
+const chasmCallVideo = 'https://media.catherineazelby.com/chasmCallFinal.mp4'
 import iconImg from '../../assets/iconChasmsCall.png'
 import batmanAlleyImg from '../../assets/chasm_BatmanBeyondAlley.jpg'
 import batmanCityImg from '../../assets/chasm_BatmanBeyondCity.jpg'
 import spiderverseCityImg from '../../assets/chasm_SpiderverseCity.webp'
-import compositeTutVideo from '../../assets/chasm_compositeTut.mp4'
-import rainFinalVideo from '../../assets/chasm_RainFinalVersion.mp4'
+const compositeTutVideo = 'https://media.catherineazelby.com/chasm_compositeTut.mp4'
+const rainFinalVideo = 'https://media.catherineazelby.com/chasm_RainFinalVersion.mp4'
 import shadowAltVideo from '../../assets/chasm_ShadowAltAngle.mp4'
 
 function ChasmsCall() {

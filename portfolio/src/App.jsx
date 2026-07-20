@@ -11,7 +11,7 @@ import Contact from './pages/Contact'
 import ChasmsCall from './pages/projects/ChasmsCall'
 import Dungeon from './pages/projects/Dungeon'
 import MindysRoom from './pages/projects/MindysRoom'
-import ScytheAnim from './pages/projects/ScytheAnim'
+// import ScytheAnim from './pages/projects/ScytheAnim'
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Route path="/animation/chasms-call" element={<ChasmsCall />} />
         <Route path="/animation/dungeon" element={<Dungeon />} />
         <Route path="/animation/mindys-room" element={<MindysRoom />} />
-        <Route path="/animation/scythe-anim" element={<ScytheAnim />} />
+        {/* <Route path="/animation/scythe-anim" element={<ScytheAnim />} /> */}
       </Routes>
     </BrowserRouter>
   )

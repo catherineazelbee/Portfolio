@@ -20,9 +20,9 @@ import mindyFF1 from '../../assets/mindy_ff1.png'
 import mindyFF2 from '../../assets/mindy_ff2.png'
 
 import deskTurnaround from '../../assets/deskTurnaround.mp4'
-import roomRenderFinal from '../../assets/roomRenderFinal.mp4'
-import mindyTurnaroundFinal from '../../assets/mindyTurnaroundFINAL.mp4'
-import mindyStoryboard from '../../assets/mindyStoryboard.mp4'
+const roomRenderFinal = 'https://media.catherineazelby.com/roomRenderFinal.mp4'
+const mindyTurnaroundFinal = 'https://media.catherineazelby.com/mindyTurnaroundFINAL.mp4'
+const mindyStoryboard = 'https://media.catherineazelby.com/mindyStoryboard.mp4'
 import mindyPlayblast1 from '../../assets/mindyPlayblast1.mp4'
 import mindyPlayblast2 from '../../assets/mindyPlayblast2.mp4'
 

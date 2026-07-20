@@ -7,7 +7,7 @@ import '../styles/coding.css'
 // Import videos
 import easyBlinkVideo from '../assets/easyBlink_thumbnail.mp4'
 import layoutLinkVideo from '../assets/layoutLink_demo.mp4'
-import vrftVideo from '../assets/VRFT_highlightReel.mp4'
+const vrftVideo = 'https://media.catherineazelby.com/VRFT_highlightReel.mp4'
 import portfolioVideo from '../assets/portfolio_thumbnail.mp4'
 
 function Coding() {

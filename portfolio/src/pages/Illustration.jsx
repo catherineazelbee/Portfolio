@@ -4,12 +4,12 @@ import '../styles/about.css'
 import '../styles/illustration.css'
 
 // Import media
-import phoneCallVideo from '../assets/illust_phoneCall.mp4'
+const phoneCallVideo = 'https://media.catherineazelby.com/illust_phoneCall.gif'
 import comicImg from '../assets/illust_Comic.png'
 import maxBlaireImg from '../assets/illust_MaxBlaire.png'
 import mindysFriendsImg from '../assets/illust_mindysFriends.png'
-import princessImg from '../assets/illust_princess.gif'
-import knightImg from '../assets/illust_knight.gif'
+const princessImg = 'https://media.catherineazelby.com/illust_knight.gif'
+const knightImg = 'https://media.catherineazelby.com/illust_knight.gif'
 
 function Illustration() {
   const [modalOpen, setModalOpen] = useState(false)

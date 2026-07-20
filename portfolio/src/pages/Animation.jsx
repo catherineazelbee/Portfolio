@@ -4,10 +4,10 @@ import '../styles/about.css'
 import '../styles/animation.css'
 
 // Import videos
-import chasmCallVideo from '../assets/chasmCallFinal.mp4'
+const chasmCallVideo = 'https://media.catherineazelby.com/chasmCallFinal.mp4'
 import dungeonVideo from '../assets/dungeon.mp4'
-import mindysRoomVideo from '../assets/mindysRoomLoop.mp4'
-import scytheVideo from '../assets/scytheAnim.mp4'
+const mindysRoomVideo = 'https://media.catherineazelby.com/mindysRoomLoop.mp4'
+// import scytheVideo from '../assets/scytheAnim.mp4'
 
 function Animation() {
   const projects = [
@@ -29,12 +29,12 @@ function Animation() {
       videoSrc: mindysRoomVideo,
       linkTo: "/animation/mindys-room"
     },
-    {
-      title: "Scythe Two Hit Combo Attack",
-      skills: "Maya",
-      videoSrc: scytheVideo,
-      linkTo: "/animation/scythe-anim"
-    }
+    // {
+    //   title: "Scythe Two Hit Combo Attack",
+    //   skills: "Maya",
+    //   videoSrc: scytheVideo,
+    //   linkTo: "/animation/scythe-anim"
+    // }
   ]
 
   return (
