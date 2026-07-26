@@ -51,7 +51,7 @@ function Home() {
               Hi, I'm Cat! I'm a 3D artist, animator, and developer. I have experience in various creative programs such as Maya, Unreal Engine, and Adobe Creative Suite. I am a passionate learner and collaborator, currently serving as Northeastern's Animation Club's President and participating in various hackathons, jams, and competitions. 
             </p>
             <p>
-              I am always looking for new opportunities to learn and grow in the 3D industry. I am currently working as an XR Developer at MIT LEAP Group, and am an incoming Advanced Development Group Intern at ILM.
+              I am always looking for new opportunities to learn and grow in the CG industry. I am currently working as an Advanced Development Group Intern at ILM.
             </p>
           </div>
         </div>

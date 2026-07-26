@@ -7,7 +7,7 @@ import '../styles/animation.css'
 const chasmCallVideo = 'https://media.catherineazelby.com/chasmCallFinal.mp4'
 import dungeonVideo from '../assets/dungeon.mp4'
 const mindysRoomVideo = 'https://media.catherineazelby.com/mindysRoomLoop.mp4'
-// import scytheVideo from '../assets/scytheAnim.mp4'
+const dreamSequenceVideo = 'https://media.catherineazelby.com/Animation/DreamSequence/DreamSequence_FINAL_CatherineAzelby.mp4'
 
 function Animation() {
   const projects = [
@@ -16,6 +16,12 @@ function Animation() {
       skills: "Unreal Engine · Blender · Nigara · After Effects",
       videoSrc: chasmCallVideo,
       linkTo: "/animation/chasms-call"
+    },
+    {
+      title: "Dream Sequence",
+      skills: "Blender · Substance Painter · Photoshop · After Effects",
+      videoSrc: dreamSequenceVideo,
+      linkTo: "/animation/dream-sequence"
     },
     {
       title: "The Dungeon",
@@ -28,13 +34,7 @@ function Animation() {
       skills: "Maya · Arnold · Substance Painter · Substance Designer · Advanced Skeleton · Photoshop · Premiere Pro · After Effects",
       videoSrc: mindysRoomVideo,
       linkTo: "/animation/mindys-room"
-    },
-    // {
-    //   title: "Scythe Two Hit Combo Attack",
-    //   skills: "Maya",
-    //   videoSrc: scytheVideo,
-    //   linkTo: "/animation/scythe-anim"
-    // }
+    }
   ]
 
   return (

@@ -23,6 +23,8 @@ function Dungeon() {
             className="animation-video" 
             src={dungeonVideo} 
             controls
+            autoPlay
+            loop
           />
         </div>
 

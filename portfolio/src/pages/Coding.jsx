@@ -5,15 +5,23 @@ import '../styles/animation.css'
 import '../styles/coding.css'
 
 // Import videos
-import easyBlinkVideo from '../assets/easyBlink_thumbnail.mp4'
-import layoutLinkVideo from '../assets/layoutLink_demo.mp4'
-const vrftVideo = 'https://media.catherineazelby.com/VRFT_highlightReel.mp4'
-import portfolioVideo from '../assets/portfolio_thumbnail.mp4'
+const easyBlinkVideo = 'https://media.catherineazelby.com/easyBlink_demo.mp4'
+const layoutLinkVideo = 'https://media.catherineazelby.com/Coding/layoutLink_demo.mp4'
+const cameraLink = 'https://media.catherineazelby.com/Coding/CameraLinkDemo.mp4'
+const renderStack = 'https://media.catherineazelby.com/Coding/Renderstack_Demo.mp4'
 
 function Coding() {
   const projects = [
     {
-      title: "EasyBlink Maya Plugin",
+      title: "CameraLink: USD Maya/Unreal Plugin",
+      skills: "Python · C++ · USD · Maya · Unreal Engine",
+      description: "Plugin for a streamlined pipeline for transferring animated cameras from Maya to Unreal Engine using USD format.",
+      videoSrc: cameraLink,
+      buttonText: "GitHub",
+      buttonLink: "https://github.com/catherineazelbee/CameraLink"
+    },
+    {
+      title: "EasyBlink: Maya Plugin",
       skills: "Python · MEL · Maya",
       description: "Plugin for quickly animating blinks for multiple character rigs in Autodesk Maya.",
       videoSrc: easyBlinkVideo,
@@ -22,27 +30,19 @@ function Coding() {
     },
     {
       title: "LayoutLink: USD Maya/Unreal Plugin",
-      skills: "Python · MEL · C++ · USD · Maya · Unreal Engine",
+      skills: "Python · C++ · USD · Maya · Unreal Engine",
       description: "Enables scene data exchange using industry-standard USD composition between Maya and Unreal Engine 5. Work-in-progress senior capstone project.",
       videoSrc: layoutLinkVideo,
       buttonText: "GitHub",
       buttonLink: "https://github.com/catherineazelbee/LayoutLink"
     },
     {
-      title: "VR Field Trips",
-      skills: "Unreal Engine · UE Blueprints · C++",
-      description: "Virtual reality playable prototype focusing on immersive STEM education. Simulates the role of a car crash test engineer to reinforce critical physics concepts.",
-      videoSrc: vrftVideo,
-      buttonText: "Lab Website",
-      buttonLink: "https://xred.sites.northeastern.edu/2025/03/26/lab-project-2/"
-    },
-    {
-      title: "Portfolio Website",
-      skills: "React · JavaScript · CSS",
-      description: "Personal portfolio website developed in React to showcase animation and development work.",
-      videoSrc: portfolioVideo,
+      title: "RenderStack",
+      skills: "Typescript · React · Three.js",
+      description: "Supports a native 3D model viewport that lets users upload and interact with 3D GLB assets in browser. Project by Catherine Azelby, Natasha Mishra Daas, Erika Ding, & Meredith Scott.",
+      videoSrc: renderStack,
       buttonText: "GitHub",
-      buttonLink: "https://github.com/catherineazelbee/Portfolio"
+      buttonLink: "https://github.com/neu-cs4530/fall25-project-group-201"
     }
   ]
 

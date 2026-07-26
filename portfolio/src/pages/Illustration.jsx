@@ -5,11 +5,10 @@ import '../styles/illustration.css'
 
 // Import media
 const phoneCallVideo = 'https://media.catherineazelby.com/illust_phoneCall.gif'
-import comicImg from '../assets/illust_Comic.png'
-import maxBlaireImg from '../assets/illust_MaxBlaire.png'
-import mindysFriendsImg from '../assets/illust_mindysFriends.png'
-const princessImg = 'https://media.catherineazelby.com/illust_knight.gif'
-const knightImg = 'https://media.catherineazelby.com/illust_knight.gif'
+const mindysFriends = 'https://media.catherineazelby.com/Illustrations/mindys_all_ref.png'
+const spamtonae = 'https://media.catherineazelby.com/Illustrations/spamton_anim.mp4'
+const roxyImg = 'https://media.catherineazelby.com/Illustrations/roxy.jpg'
+const deltarunech3 = 'https://media.catherineazelby.com/Illustrations/deltarune_ch3_PRINT_FINAL.png'
 
 function Illustration() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -19,38 +18,32 @@ function Illustration() {
     {
       title: "Who's on the Phone?",
       src: phoneCallVideo,
-      type: "video",
-      description: "Animated illustration. Created using Adobe Photoshop 2025."
+      type: "image",
+      description: "Animated illustration. Created using Adobe Photoshop and Adobe After Effects 2025."
     },
     {
-      title: "A Day in My Life: Comic Strip",
-      src: comicImg,
+      title: "Deltarune Chapter 3",
+      src: deltarunech3,
       type: "image",
-      description: "Comic strip created for Color and Composition final project. Created using Adobe Photoshop 2023."
-    },
-    {
-      title: "Max & Blair: Original Characters",
-      src: maxBlaireImg,
-      type: "image",
-      description: "Illustration of original characters Max and Blair. Created in Adobe Photoshop 2025."
+      description: "Fanart of Deltarune Chapter 3. Created in Adobe Photoshop 2025."
     },
     {
       title: "Mindy's Friends",
-      src: mindysFriendsImg,
+      src: mindysFriends,
       type: "image",
-      description: "Illustration of original characters (from left: Jacob, Mindy, Alia). Created in Adobe Photoshop 2025."
+      description: "Illustration of original characters (from left: Mindy, Alia, Jacob, Simone, Xander). Created in Adobe Photoshop 2025."
     },
     {
-      title: "Princess Flora",
-      src: princessImg,
-      type: "image",
-      description: "Princess Flora character design and illustration created for Game Jam: Slice of Jam 2025. Created using Adobe Photoshop 2025."
+      title: "Deltarune Chapter 2",
+      src: spamtonae,
+      type: "video",
+      description: "Fanart of Deltarune Chapter 2. Created in Photoshop and tweened in Adobe After Effects."
     },
     {
-      title: "Knight Mars",
-      src: knightImg,
+      title: "Roxy",
+      src: roxyImg,
       type: "image",
-      description: "Knight Mars character design and illustration created for Game Jam: Slice of Jam 2025. Created using Adobe Photoshop 2025."
+      description: "Risograph fanart print of Roxy Lalonde. Created in Adobe Photoshop 2025."
     }
   ]
 
@@ -72,7 +65,7 @@ function Illustration() {
 
       <div className="page-container">
         <h1 className="page-title">Illustration</h1>
-        
+
         <div className="illustration-gallery">
           {illustrations.map((item, index) => (
             <div

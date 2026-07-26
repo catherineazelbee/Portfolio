@@ -35,7 +35,7 @@
 
 .content-container {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   max-width: 1000px;
 }
 
@@ -121,8 +121,11 @@
   font-size: 16px;
   line-height: 1.8;
   color: var(--text-medium, #5a5670);
-  margin: 0 auto 24px;
   text-align: left;
+}
+
+.project-info-text p {
+  margin-bottom: 10px;
 }
 
 .project-info-img-container {
