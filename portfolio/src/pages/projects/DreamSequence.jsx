@@ -121,7 +121,6 @@ function DreamSequence() {
                 I utilized three different layers of EXR renders, one of the environment, one of the character, and one of the emission. 
                 This way, I could easily adjust the Miku to stand out from the environment, as well as adjust the emphasize the glow of the 
                 different lights.
-                 
               </p>
               <video className="project-info-animatic" src={compositeTutVideo} autoPlay loop muted playsInline />
             </div>
