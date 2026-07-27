@@ -1,11 +1,11 @@
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 40px;
-  box-sizing: border-box;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 40px;
+max-width: 1500px;
+margin: 0 auto;
+padding: 0 40px;
+box-sizing: border-box;
 }
 
 .project-container {
@@ -17,87 +17,249 @@
   text-align: center;
   position: relative;
   padding: 20px;
+  cursor: pointer;
 }
+
 .project-container:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(75, 75, 75, 0.5);
+transform: scale(1.05);
+box-shadow: 0 6px 20px rgba(75, 75, 75, 0.5);
 }
 
 /* Titles & descriptions */
 .project-title {
-  font-size: 20px;
-  color: #252325;
-  font-weight: bold;
-  margin-bottom: 10px;
+font-size: 20px;
+color: #252325;
+font-weight: bold;
+margin-bottom: 10px;
 }
+
+.project-skills {
+font-size: 14px;
+color: #252325;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
 .project-description {
-  font-size: 16px;
-  color: #252325;
-  margin-bottom: 16px;
+font-size: 16px;
+color: #252325;
+margin-bottom: 16px;
 }
 
 .project-media {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 16px;
+width: 100%;
+aspect-ratio: 16/9;
+object-fit: cover;
+display: block;
+margin-bottom: 16px;
 }
 
+/* GitHub button */
 .button-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  position: relative;
+  z-index: 5;
 }
+
 .contact-button {
-  background-color: #ffffff;
-  color: #2d2a3e;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(107, 91, 149, 0.15);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+background-color: #ffffff;
+color: #2d2a3e;
+font-size: 16px;
+font-weight: 600;
+padding: 12px 24px;
+border-radius: 50px;
+text-decoration: none;
+box-shadow: 0 2px 8px rgba(107, 91, 149, 0.15);
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .contact-button:hover {
-  background-color: #f5f3ff;
-  transform: translateY(-2px);
+background-color: #f5f3ff;
+transform: translateY(-2px);
 }
+
+/* =========================
+Coding Project Modal
+========================= */
+
+.coding-modal-overlay {
+position: fixed;
+inset: 0;
+z-index: 1000;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 40px;
+box-sizing: border-box;
+
+background-color: rgba(0, 0, 0, 0.75);
+}
+
+.coding-modal-content {
+width: min(1000px, 90vw);
+max-height: 90vh;
+
+overflow-y: auto;
+
+padding: 30px;
+
+background-color: #dcd7f8;
+border-radius: 8px;
+
+box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+
+box-sizing: border-box;
+}
+
+.coding-modal-header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.coding-modal-title {
+font-size: 28px;
+color: #252325;
+font-weight: bold;
+margin: 0 0 10px;
+}
+
+.coding-modal-skills {
+font-size: 16px;
+color: #252325;
+font-weight: 600;
+margin: 0 0 10px;
+}
+
+.coding-modal-description {
+font-size: 16px;
+color: #252325;
+margin: 0;
+}
+
+/* Larger video inside modal */
+.coding-modal-video {
+display: block;
+
+width: 100%;
+max-height: 60vh;
+
+object-fit: contain;
+
+background-color: #000;
+border-radius: 4px;
+}
+
+/* GitHub button inside modal */
+.coding-modal-button-container {
+display: flex;
+justify-content: center;
+
+margin-top: 25px;
+}
+
+.coding-modal-skills {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.coding-modal-description {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* =========================
+Responsive
+========================= */
 
 @media (max-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    max-width: 600px;
-  }
+.projects-grid {
+grid-template-columns: 1fr;
+max-width: 600px;
 }
+
+.coding-modal-content {
+width: 90vw;
+}
+}
+
 @media (max-width: 768px) {
-  .project-title {
-    font-size: 18px;
-  }
-  .project-description {
-    font-size: 14px;
-  }
-  .contact-button {
-    font-size: 12px;
-    padding: 10px 20px;
-  }
+.project-title {
+font-size: 18px;
 }
+
+.project-description {
+font-size: 14px;
+}
+
+.contact-button {
+font-size: 12px;
+padding: 10px 20px;
+}
+
+.coding-modal-overlay {
+padding: 20px;
+}
+
+.coding-modal-content {
+padding: 20px;
+}
+
+.coding-modal-title {
+font-size: 22px;
+}
+
+.coding-modal-skills {
+font-size: 14px;
+}
+
+.coding-modal-description {
+font-size: 14px;
+}
+}
+
 @media (max-width: 480px) {
-  .project-title {
-    font-size: 16px;
-  }
-  .project-description {
-    font-size: 12px;
-  }
-  .contact-button {
-    font-size: 10px;
-    padding: 8px 16px;
-  }
+.project-title {
+font-size: 16px;
 }
+
+.project-description {
+font-size: 12px;
+}
+
+.contact-button {
+font-size: 10px;
+padding: 8px 16px;
+}
+
+.coding-modal-overlay {
+padding: 10px;
+}
+
+.coding-modal-content {
+padding: 15px;
+width: 95vw;
+}
+
+.coding-modal-title {
+font-size: 18px;
+}
+
+.coding-modal-skills {
+font-size: 12px;
+}
+
+.coding-modal-description {
+font-size: 12px;
+}
+}
+
 @media (min-width: 1600px) {
-  .projects-grid {
-    gap: 60px;
-    padding: 60px;
-  }
+.projects-grid {
+gap: 60px;
+padding: 60px;
+}
 }

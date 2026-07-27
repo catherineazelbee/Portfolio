@@ -3,6 +3,7 @@ import CodingCard from '../components/CodingCard'
 import '../styles/about.css'
 import '../styles/animation.css'
 import '../styles/coding.css'
+import '../styles/illustration.css'
 
 // Import videos
 const easyBlinkVideo = 'https://media.catherineazelby.com/easyBlink_demo.mp4'
@@ -47,11 +48,12 @@ function Coding() {
   ]
 
   return (
-    <>
-      <Navbar />
+    <> <Navbar />
 
+      ```
       <div className="page-container">
         <h1 className="page-title">Code</h1>
+
         <div className="projects-grid">
           {projects.map((project, index) => (
             <CodingCard
@@ -67,6 +69,7 @@ function Coding() {
         </div>
       </div>
     </>
+
   )
 }
 
