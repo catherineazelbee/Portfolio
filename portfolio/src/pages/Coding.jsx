@@ -4,8 +4,10 @@ import '../styles/about.css'
 import '../styles/animation.css'
 import '../styles/coding.css'
 import '../styles/illustration.css'
+import '../styles/reel.css'
 
 // Import videos
+const techReel = 'https://media.catherineazelby.com/Coding/TECH_DEMO_REEL.mp4'
 const easyBlinkVideo = 'https://media.catherineazelby.com/easyBlink_demo.mp4'
 const layoutLinkVideo = 'https://media.catherineazelby.com/Coding/layoutLink_demo.mp4'
 const cameraLink = 'https://media.catherineazelby.com/Coding/CameraLinkDemo.mp4'
@@ -48,11 +50,26 @@ function Coding() {
   ]
 
   return (
-    <> <Navbar />
+    <>
+      <Navbar />
 
-      ```
       <div className="page-container">
         <h1 className="page-title">Code</h1>
+
+        <div className="page-reel">
+          <video
+            className="page-reel-video"
+            src={techReel}
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls
+            preload="metadata"
+          />
+        </div>
+
+        <h2 className="section-lead">Browse Projects</h2>
 
         <div className="projects-grid">
           {projects.map((project, index) => (
@@ -69,7 +86,6 @@ function Coding() {
         </div>
       </div>
     </>
-
   )
 }
 
