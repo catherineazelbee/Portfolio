@@ -91,7 +91,7 @@ function Home() {
           <ReelPanel
             to="/animation"
             label="Animation"
-            blurb="Cinematic shorts, lighting, compositing and animation"
+            blurb="Cinematic shorts, lighting, compositing, and animation"
             videoSrc={animReel}
             poster={thumbnail}
           />
