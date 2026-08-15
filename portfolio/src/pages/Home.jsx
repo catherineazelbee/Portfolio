@@ -85,13 +85,13 @@ function Home() {
           <ReelPanel
             to="/coding"
             label="Tech"
-            blurb="Pipeline tools, plugins, and USD workflows"
+            blurb="Pipeline tools, plugins, websites, and USD workflows"
             videoSrc={techReel}
           />
           <ReelPanel
             to="/animation"
             label="Animation"
-            blurb="Shorts, lighting, and real-time environments"
+            blurb="Cinematic shorts, lighting, compositing and animation"
             videoSrc={animReel}
             poster={thumbnail}
           />
