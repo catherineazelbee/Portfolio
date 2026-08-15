@@ -2,8 +2,13 @@ import Navbar from '../components/Navbar'
 import VideoCard from '../components/VideoCard'
 import '../styles/about.css'
 import '../styles/animation.css'
+import '../styles/reel.css'
+
+// Import assets
+import thumbnail from '../assets/thumbnail.png'
 
 // Import videos
+const animReel = 'https://media.catherineazelby.com/demoReel.mp4'
 const chasmCallVideo = 'https://media.catherineazelby.com/chasmCallFinal.mp4'
 import dungeonVideo from '../assets/dungeon.mp4'
 const mindysRoomVideo = 'https://media.catherineazelby.com/mindysRoomLoop.mp4'
@@ -13,7 +18,7 @@ function Animation() {
   const projects = [
     {
       title: "Chasm's Call: Challenge Submission",
-      skills: "Unreal Engine · Blender · Nigara · After Effects",
+      skills: "Unreal Engine · Blender · Niagara · After Effects",
       videoSrc: chasmCallVideo,
       linkTo: "/animation/chasms-call"
     },
@@ -43,6 +48,23 @@ function Animation() {
 
       <div className="page-container">
         <h1 className="page-title">Animation</h1>
+
+        <div className="page-reel">
+          <video
+            className="page-reel-video"
+            src={animReel}
+            poster={thumbnail}
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls
+            preload="metadata"
+          />
+        </div>
+
+        <h2 className="section-lead">Browse Projects</h2>
+
         <div className="projects-grid">
           {projects.map((project, index) => (
             <VideoCard

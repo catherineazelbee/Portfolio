@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 
 // Pages
 import Home from './pages/Home'
@@ -13,9 +14,21 @@ import Dungeon from './pages/projects/Dungeon'
 import MindysRoom from './pages/projects/MindysRoom'
 import DreamSequence from './pages/projects/DreamSequence'
 
+// Jump to the top on every route change
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [pathname])
+
+  return null
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         {/* Main pages */}
         <Route path="/" element={<Home />} />
@@ -23,7 +36,7 @@ function App() {
         <Route path="/coding" element={<Coding />} />
         <Route path="/illustration" element={<Illustration />} />
         <Route path="/contact" element={<Contact />} />
-        
+
         {/* Project detail pages */}
         <Route path="/animation/chasms-call" element={<ChasmsCall />} />
         <Route path="/animation/dungeon" element={<Dungeon />} />

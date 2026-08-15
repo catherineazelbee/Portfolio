@@ -14,11 +14,22 @@
 
 .page-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
   color: var(--text-dark, #2d2a3e);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.section-lead {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: var(--text-dark, #2d2a3e);
+  text-align: center;
+  margin: 0 0 28px;
 }
 
 /* Strip link underlines inside cards */
@@ -132,9 +143,14 @@
     padding: 90px 24px 50px;
   }
   
-  .page-title {
-    font-size: 36px;
-    margin-bottom: 30px;
+.page-title {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .section-lead {
+    font-size: 18px;
+    margin-bottom: 22px;
   }
   
   .projects-grid {
@@ -151,8 +167,8 @@
     padding: 80px 16px 40px;
   }
   
-  .page-title {
-    font-size: 28px;
+.page-title {
+    font-size: 20px;
   }
   
   .project-container {

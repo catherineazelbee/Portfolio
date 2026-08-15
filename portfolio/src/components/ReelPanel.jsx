@@ -67,7 +67,11 @@ function ReelPanel({ to, label, blurb, videoSrc, poster }) {
       <div className="reel-panel-content">
         <h3 className="reel-panel-label">{label}</h3>
         <p className="reel-panel-blurb">{blurb}</p>
-        <span className="reel-panel-cta">View Reel</span>
+<<<<<<< HEAD
+        <span className="reel-panel-cta">View reel</span>
+=======
+        <span className="reel-panel-cta">View reel</span>
+>>>>>>> cce8c35a9007b2d3136aa7e6c39323e5e43098bc
       </div>
     </Link>
   )
