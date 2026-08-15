@@ -11,13 +11,13 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/animation" className={({ isActive }) => isActive ? 'active' : ''}>
-            Animation
+          <NavLink to="/coding" className={({ isActive }) => isActive ? 'active' : ''}>
+            Code
           </NavLink>
         </li>
         <li>
-          <NavLink to="/coding" className={({ isActive }) => isActive ? 'active' : ''}>
-            Code
+          <NavLink to="/animation" className={({ isActive }) => isActive ? 'active' : ''}>
+            Animation
           </NavLink>
         </li>
         <li>

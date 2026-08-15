@@ -1,0 +1,230 @@
+/* home.css - homepage only
+/* ========================================
+   INTRO — photo left, bio right
+   ======================================== */
+.home-intro {
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 40px 60px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 45%,
+    var(--purple-lightest) 100%
+  );
+}
+
+.home-intro-inner {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  max-width: 1050px;
+  width: 100%;
+}
+
+.home-headshot {
+  width: 340px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  flex-shrink: 0;
+}
+
+.home-intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.home-role {
+  font-family: 'Outfit', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--purple-darker);
+  margin-bottom: 28px;
+}
+
+.home-bio {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-medium);
+  margin-bottom: 18px;
+}
+
+.home-bio:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   LINKS BAND
+   ======================================== */
+.home-links {
+  display: flex;
+  justify-content: center;
+  padding: 10px 40px 60px;
+  background: linear-gradient(
+    180deg,
+    var(--purple-lightest) 0%,
+    var(--purple-light) 100%
+  );
+}
+
+.home-links .hero-buttons {
+  gap: 22px;
+}
+
+.home-links .hero-button {
+  padding: 18px 42px;
+  font-size: 18px;
+}
+
+/* ========================================
+   SPLIT SECTION SHELL
+   ======================================== */
+.home-split {
+  background-color: var(--purple-light);
+  padding-bottom: 0;
+}
+
+.home-split-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.home-split-sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
+  color: var(--text-medium);
+  text-align: center;
+  margin: 10px 0 44px;
+}
+
+.home-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 32px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 1024px) {
+  .home-intro {
+    min-height: auto;
+    padding: 130px 32px 70px;
+  }
+
+  .home-intro-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .home-headshot {
+    width: 280px;
+    height: 350px;
+  }
+
+  .home-name {
+    font-size: 48px;
+  }
+
+.home-split-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-intro {
+    padding: 120px 24px 60px;
+  }
+
+  .home-name {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .home-role {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+
+  .home-bio {
+    font-size: 16px;
+  }
+
+  .home-links {
+    padding: 56px 24px 70px;
+  }
+
+  .home-split-title {
+    font-size: 30px;
+  }
+
+  .home-split-sub {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .home-links {
+    padding: 6px 24px 50px;
+  }
+
+  .home-links .hero-button {
+    padding: 15px 34px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-headshot {
+    width: 230px;
+    height: 290px;
+  }
+
+  .home-name {
+    font-size: 32px;
+  }
+
+  .home-bio {
+    font-size: 15px;
+  }
+
+  .home-split-title {
+    font-size: 25px;
+  }
+
+  .home-links .hero-buttons {
+    gap: 14px;
+  }
+
+  .home-links .hero-button {
+    width: 220px;
+    text-align: center;
+  }
+}
