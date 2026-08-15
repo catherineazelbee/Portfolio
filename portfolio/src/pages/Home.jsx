@@ -28,7 +28,7 @@ function Home() {
 
           <div className="home-intro-text">
             <h1 className="home-name">Catherine Azelby</h1>
-            <p className="home-role">3D Generalist — Technical Director</p>
+            <p className="home-role">Technical Director — 3D Generalist</p>
             <p className="home-bio">
               Hi, I'm Cat! I'm a 3D artist, animator, and developer. I have
               experience in various creative programs such as Maya, Unreal
