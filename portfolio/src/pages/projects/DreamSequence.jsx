@@ -48,7 +48,7 @@ function DreamSequence() {
             <p>Environment Modeling/Texturing/Lighting/MoCap Animation Cleanup in Blender, Additional texturing done in Substance Painter, Compositing/Editing in After Effects 2025</p>
             <p>Miku character Model by Ichi, MoCap Animation by mobiusP</p>
             <p>
-              Find List of assets used here:{' '}
+              Find List of assets used here:{' '}. 
               <a
                 href="https://docs.google.com/spreadsheets/d/1Z3PdnRjBRH_f-yH5CwZYr0LPIWwaqWx0ukuvvSDvEsw/edit?usp=sharing"
                 target="_blank"
