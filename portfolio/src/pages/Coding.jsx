@@ -42,7 +42,7 @@ function Coding() {
     {
       title: "RenderStack",
       skills: "Typescript · React · Three.js",
-      description: "Supports a native 3D model viewport that lets users upload and interact with 3D GLB assets in browser. Project by Catherine Azelby, Natasha Mishra Daas, Erika Ding, & Meredith Scott.",
+      description: "Supports a native 3D model viewport that lets users upload and interact with 3D GLB assets in browser.",
       videoSrc: renderStack,
       buttonText: "GitHub",
       buttonLink: "https://github.com/neu-cs4530/fall25-project-group-201"

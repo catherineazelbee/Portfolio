@@ -21,7 +21,7 @@ function Contact() {
             <p className="contact-role">3D Generalist · Technical Director</p>
             
             <p className="contact-subtitle">
-              Seeking opportunities in animation, technical direction, and pipeline development.
+              Seeking opportunities in technical art, technical direction, and pipeline development.
             </p>
             
             <div className="contact-buttons">

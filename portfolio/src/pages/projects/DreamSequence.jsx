@@ -13,14 +13,6 @@ const loadingScreen3Gif = 'https://media.catherineazelby.com/Animation/DreamSequ
 const loadingScreen4Gif = 'https://media.catherineazelby.com/Animation/DreamSequence/LoadingScreen4.gif'
 const compositeTutVideo = 'https://media.catherineazelby.com/Animation/DreamSequence/DreamSequence_CompositeTut.mp4'
 
-// OLD
-import batmanAlleyImg from '../../assets/chasm_BatmanBeyondAlley.jpg'
-import batmanCityImg from '../../assets/chasm_BatmanBeyondCity.jpg'
-import spiderverseCityImg from '../../assets/chasm_SpiderverseCity.webp'
-
-const rainFinalVideo = 'https://media.catherineazelby.com/chasm_RainFinalVersion.mp4'
-
-
 function DreamSequence() {
   return (
     <>
@@ -48,7 +40,7 @@ function DreamSequence() {
             <p>Environment Modeling/Texturing/Lighting/MoCap Animation Cleanup in Blender, Additional texturing done in Substance Painter, Compositing/Editing in After Effects 2025</p>
             <p>Miku character Model by Ichi, MoCap Animation by mobiusP</p>
             <p>
-              Find List of assets used here:{' '}. 
+              Find List of assets used here:{' '}.
               <a
                 href="https://docs.google.com/spreadsheets/d/1Z3PdnRjBRH_f-yH5CwZYr0LPIWwaqWx0ukuvvSDvEsw/edit?usp=sharing"
                 target="_blank"
@@ -85,7 +77,7 @@ function DreamSequence() {
               <p>
                 For this project, I took a lot of inspiration from <em>Hatsune Miku Project Diva</em>, a rhythm game series.
                 Since this animation challenge was based around music, I was motivateed to create a Hatsune Miku inspired project.
-                Two Project Diva levels I specifically refereced  and took inspiration from were <em>Luka Luka Night Fever</em> and 
+                Two Project Diva levels I specifically refereced  and took inspiration from were <em>Luka Luka Night Fever</em> and
                 <em>The Intense Voice of Hatsune Miku</em>.
               </p>
 
@@ -104,7 +96,7 @@ function DreamSequence() {
                 <div className="project-info-img-container">
                   <img className="project-info-img" src={loadingScreen1Gif} alt="Loading Screen 1 Reference" />
                   <img className="project-info-img" src={loadingScreen2Gif} alt="Loading Screen 2 Reference" />
-                  <br/>
+                  <br />
                   <img className="project-info-img" src={loadingScreen3Gif} alt="Loading Screen 3 Reference" />
                   <img className="project-info-img" src={loadingScreen4Gif} alt="Loading Screen 4 Reference" />
                 </div>
@@ -117,9 +109,9 @@ function DreamSequence() {
             <h1>Compositing</h1>
             <div className="project-info-text">
               <p>
-                Out of all my animation projects, I definitely spent the most time on compositing and color correction for this project. 
-                I utilized three different layers of EXR renders, one of the environment, one of the character, and one of the emission. 
-                This way, I could easily adjust the Miku to stand out from the environment, as well as adjust the emphasize the glow of the 
+                Out of all my animation projects, I definitely spent the most time on compositing and color correction for this project.
+                I utilized three different layers of EXR renders, one of the environment, one of the character, and one of the emission.
+                This way, I could easily adjust the Miku to stand out from the environment, as well as adjust the emphasize the glow of the
                 different lights.
               </p>
               <video className="project-info-animatic" src={compositeTutVideo} autoPlay loop muted playsInline />
@@ -129,11 +121,11 @@ function DreamSequence() {
             <h1>MoCap Cleanup</h1>
             <div className="project-info-text">
               <p>
-                I was able to save a lot of time on this project by using pre-existing motion capture data for the character animation. 
-                However, I still had to clean up the animation to make it more believable and fit the scene better. 
-                I used Blender's NLA animation editor to adjust the character's movements, adjusting the timing and spacing of my sourced mocap 
-                data to better fit the timing of the camera. I also had to hand keyframe most of the facial animations myself, as it was usually 
-                not present in the mocap data. 
+                I was able to save a lot of time on this project by using pre-existing motion capture data for the character animation.
+                However, I still had to clean up the animation to make it more believable and fit the scene better.
+                I used Blender's NLA animation editor to adjust the character's movements, adjusting the timing and spacing of my sourced mocap
+                data to better fit the timing of the camera. I also had to hand keyframe most of the facial animations myself, as it was usually
+                not present in the mocap data.
               </p>
             </div>
           </div>
