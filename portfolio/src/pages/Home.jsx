@@ -33,14 +33,15 @@ function Home() {
               Hi, I'm Cat! I'm a 3D artist, animator, and developer. I have
               experience in various creative programs such as Maya, Unreal
               Engine, and Adobe Creative Suite. I am a passionate learner and
-              collaborator, currently serving as Northeastern's Animation Club's
+              collaborator, previously serving as Northeastern's Animation Club's
               President and participating in various hackathons, jams, and
               competitions.
             </p>
             <p className="home-bio">
               I am always looking for new opportunities to learn and grow in the
-              CG industry. I am currently working as the Lucasfilm ILM Advanced Development
-              Group's Virtual Production Content Pipeline Intern.
+              CG industry. I recently finished working as the Lucasfilm ILM Advanced Development
+              Group's Virtual Production Content Pipeline Intern, and am looking for new opportunities 
+              starting January 2027.
             </p>
           </div>
         </div>
