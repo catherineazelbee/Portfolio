@@ -28,19 +28,16 @@ function Home() {
 
           <div className="home-intro-text">
             <h1 className="home-name">Catherine Azelby</h1>
-            <p className="home-role">Technical Director — 3D Generalist</p>
+            <p className="home-role">Pipeline TD — Tech Artist — 3D Generalist</p>
             <p className="home-bio">
-              Hi, I'm Cat! I'm a 3D artist, animator, and developer. I have
-              experience in various creative programs such as Maya, Unreal
-              Engine, and Adobe Creative Suite. I am a passionate learner and
-              collaborator, previously serving as Northeastern's Animation Club's
-              President and participating in various hackathons, jams, and
-              competitions.
+              Hi, I'm Cat! I'm a developer and artist, with experience in VFX pipeline workflows, 
+              game development, and immersive media. I can work in various DCCs as both an artist and
+              developer, creating original animation projects and developing custom pipeline tools.
             </p>
             <p className="home-bio">
               I am always looking for new opportunities to learn and grow in the
               CG industry. I recently finished working as the Lucasfilm ILM Advanced Development
-              Group's Virtual Production Content Pipeline Intern, and am looking for new opportunities 
+              Group's Virtual Production Content Pipeline Intern, and am looking for full-time opportunities
               starting January 2027.
             </p>
           </div>
