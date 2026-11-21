@@ -18,7 +18,7 @@ function Contact() {
           
           <div className="contact-content">
             <h1 className="contact-name">Catherine Azelby</h1>
-            <p className="contact-role">3D Generalist · Technical Director</p>
+            <p className="contact-role">Pipeline TD — Tech Artist — 3D Generalist</p>
             
             <p className="contact-subtitle">
               Seeking opportunities in technical art, technical direction, and pipeline development.
